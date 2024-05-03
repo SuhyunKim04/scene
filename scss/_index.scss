@@ -1,0 +1,43 @@
+.page_header{
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    h1{
+        margin-left: 20px;
+    }
+
+    .gnb{
+        margin-left: 60px;
+        font-size: 16px;
+        font-weight: 500;
+        ul{
+            display: flex;
+            column-gap: 20px;
+        }
+       
+    }
+}
+
+.nature{
+    .nature_box{
+        display: flex;
+        flex-wrap: wrap;
+
+        h2{
+            font-family: "Jersey 15", sans-serif;
+            font-size: 26px;
+        }
+    
+        li{
+            width: 260px;
+            margin: 0 20px;
+            img{
+                width: 100%;
+                min-height: 100%;
+            }
+        }
+    }
+}
