@@ -5,8 +5,10 @@ function slideContens(){
     $list.slick({
         infinite: true,
         slidesToShow: 5,
-        slidesToScroll: 5
+        slidesToScroll: 5,
+        autoPlay : true,
+        dots : false
       });
 }
 
-slideContens();
+// slideContens();
