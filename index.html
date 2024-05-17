@@ -8,6 +8,9 @@
     <script src="./js/jquery-1.12.1.js"></script>
     <script src="./js/jquery-ui.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     <script src="./js/slick.min.js"></script>
 </head>
 <body>
@@ -31,12 +34,42 @@
                 </li>
             </ul>
         </nav>
+        <div class="search_box">
+            <form id="task">
+                <fieldset>
+                    <legend>Search</legend>
+                    <input type="search" placeholder="search" name="task" class="search_bar">
+                    <button type="submit">
+                        <i class="material-symbols-outlined">
+                        search
+                        </i>
+                    </button>
+                </fieldset>
+            </form>
+    </div>
+
+        <div class="my_account">
+            <ul class="account_modal">
+                <li>
+                    <i class="material-symbols-outlined">
+                        edit
+                    </i>
+                    Profile
+                </li>
+                <li>
+                    <i class="material-symbols-outlined">
+                        person
+                    </i>Account
+                </li>
+            </ul>
+        </div>
     </header>
 
     <section class="main_video">
         <video src="./video/main.mp4" loop autoplay muted></video>
     </section>
-
+    
+    <main class="page_main">
     <section class="nature slide_main">
         <h2>Nature</h2>
         <ul class="nature_box slide_box">
@@ -264,7 +297,7 @@
         </ul>
     </section>
 
-
+</main>
     
     <footer>
         

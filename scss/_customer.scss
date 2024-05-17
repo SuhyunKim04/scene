@@ -1,0 +1,21 @@
+
+
+.customer{
+    background-color: rgb(3, 42, 56);
+    height: 100px;
+
+    .customer_list{
+        display: flex;
+        color: #fff;
+        cursor: pointer;
+        justify-content:space-around;
+        margin: 0 20px;
+    }
+
+    .service{
+        cursor: pointer;
+        display: flex;
+        margin-left: 100px;
+        margin-top: 20px;
+    }
+}
