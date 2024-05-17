@@ -6,6 +6,7 @@
     width: 100%;
     left:0;top:0;
     z-index: 1000;
+    justify-content: space-around;
     h1{
         margin-left: 20px;
     }
@@ -16,7 +17,7 @@
         font-weight: 500;
         ul{
             display: flex;
-            column-gap: 20px;
+            column-gap: 40px;
         }
        
     }
@@ -47,8 +48,8 @@
             // display: none;
             background-color: #000;
             position: absolute;
-            top: 50px;
-            right:-10px;
+            top: 70px;
+            right:20px;
             width: 160px;
             color: #fff;
             padding: 10px;
@@ -81,11 +82,6 @@
     }
 }
 
-
-.page_main{
-    position: relative;
-    top: 110px;
-}
 
 .slide_main{
     h2{
