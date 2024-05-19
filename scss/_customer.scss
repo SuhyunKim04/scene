@@ -1,6 +1,9 @@
-
+.test{
+    position: relative;
+    top: 100px;
+}
     .customer{
-        .customer_list{
+        .customer_menu{
             display: flex;
             color: rgb(33, 33, 81);
             cursor: pointer;
@@ -8,11 +11,8 @@
             margin: 0 20px;
             height: 60px;
         }
-    
-        .service{
-            cursor: pointer;
-            display: flex;
-            margin-left: 100px;
-            margin-top: 20px;
-        }
+    }
+
+    .customer_list{
+        margin-left: 30px;
     }

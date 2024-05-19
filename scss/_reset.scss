@@ -76,7 +76,14 @@ select {
 
 //input
 //border background
-input[type=text]{
-	border: none;
-	background: #000;
-}
+
+$types : 'search','text','email','tel','number','password';
+
+@each $type in $types {
+	input[type='#{$type}'] {
+		border: none 0;
+		background-color:transparent;
+	    height:map-get($input, height);
+	}
+  }
+   

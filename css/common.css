@@ -1,5 +1,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+/*
+$modal : {
+    bg : #fff
+}
+
+$btn : {
+    active : ,
+    disable :, 
+}
+
+*/
 body, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, fieldset, button, select, textarea, figure, figcaption {
   margin: 0;
   padding: 0;
@@ -76,9 +87,40 @@ select {
   overflow: hidden;
 }
 
+input[type=search] {
+  border: none 0;
+  background-color: transparent;
+  height: 30px;
+}
+
 input[type=text] {
-  border: none;
-  background: #000;
+  border: none 0;
+  background-color: transparent;
+  height: 30px;
+}
+
+input[type=email] {
+  border: none 0;
+  background-color: transparent;
+  height: 30px;
+}
+
+input[type=tel] {
+  border: none 0;
+  background-color: transparent;
+  height: 30px;
+}
+
+input[type=number] {
+  border: none 0;
+  background-color: transparent;
+  height: 30px;
+}
+
+input[type=password] {
+  border: none 0;
+  background-color: transparent;
+  height: 30px;
 }
 
 body {
@@ -91,8 +133,7 @@ h1 {
 }
 
 .page_main {
-  position: relative;
-  top: 110px;
+  padding-top: 110px;
 }
 
 .page_header {
@@ -105,6 +146,12 @@ h1 {
   top: 0;
   z-index: 1000;
   justify-content: space-around;
+  transition: background-color 0.4s ease-in-out;
+}
+.page_header.open {
+  background-color: #000;
+  opacity: 0.9;
+  color: #fff;
 }
 .page_header h1 {
   margin-left: 20px;
@@ -123,10 +170,7 @@ h1 {
   margin-left: 50px;
 }
 .page_header .search_box .search_bar {
-  width: 0;
   border-radius: 20px;
-  border-color: #000;
-  border-width: 2px;
   height: 26px;
   background-color: #000;
   color: #fff;
@@ -195,7 +239,12 @@ h1 {
   object-fit: cover;
 }
 
-.customer .customer_list {
+.test {
+  position: relative;
+  top: 100px;
+}
+
+.customer .customer_menu {
   display: flex;
   color: rgb(33, 33, 81);
   cursor: pointer;
@@ -203,11 +252,9 @@ h1 {
   margin: 0 20px;
   height: 60px;
 }
-.customer .service {
-  cursor: pointer;
-  display: flex;
-  margin-left: 100px;
-  margin-top: 20px;
+
+.customer_list {
+  margin-left: 30px;
 }
 
 /*# sourceMappingURL=common.css.map */

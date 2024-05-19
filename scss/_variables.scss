@@ -1,0 +1,35 @@
+
+$corner : (
+    base : 3px,
+    round : 30px
+);
+
+// input design
+$input : (
+    height : 30px,
+    bg : black,
+    border : 1px solid red,
+    radius : map-get($corner, round)
+);
+
+$text : #fff, #a5a5a5;
+// p { color : nth($text, 2) }
+
+$text : (
+    active : #fff,
+    mute : #ddd,
+    body : #a5a5a5
+);
+// p { color : map-get($text, active);
+
+/*
+$modal : {
+    bg : #fff
+}
+
+$btn : {
+    active : ,
+    disable :, 
+}
+
+*/
