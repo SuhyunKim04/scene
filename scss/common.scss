@@ -9,6 +9,8 @@
 
 body{
     font-family: "Quicksand", sans-serif;
+    background-color: #1b1b1b;
+    color:#fff;
 }
 
 h1{
@@ -27,4 +29,4 @@ h1{
  
 
 
-@import 'header','index','customer';
+@import 'header','index','customer','mixin';

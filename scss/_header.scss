@@ -10,6 +10,8 @@
     z-index: 1000;
     justify-content: space-around;
     transition: background-color 0.4s ease-in-out;
+    // @include flex($j:space-around,$a:center);
+    // @include position($p:fixed,$l:0,$t:0);
     
     &.open{
         background-color: #000;
@@ -61,6 +63,7 @@
             width: 160px;
             color: #fff;
             padding: 10px;
+            // @include position($p:absolute,$bg:#000,$t:70px,$r:20px)
 
             li{
                 margin-bottom: 4px;

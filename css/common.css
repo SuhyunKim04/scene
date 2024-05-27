@@ -125,6 +125,8 @@ input[type=password] {
 
 body {
   font-family: "Quicksand", sans-serif;
+  background-color: #1b1b1b;
+  color: #fff;
 }
 
 h1 {
@@ -246,11 +248,11 @@ h1 {
 
 .customer .customer_menu {
   display: flex;
-  color: rgb(33, 33, 81);
   cursor: pointer;
   justify-content: space-around;
   margin: 0 20px;
   height: 60px;
+  color: #a5a5a5;
 }
 
 .customer_list {
