@@ -13,6 +13,62 @@
         }
     }
 
-    .customer_list{
-        margin-left: 30px;
+    .search_help{
+        position: fixed;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width: 100%;
+        background-color: #252525;
+        padding: 50px 150px;
+
+        h2{
+            padding-bottom: 20px;
+        }
+
+        .search_help_bar{
+            width: 560px;
+            height: 46px;
+            background-color: #2f2f2f;
+            color:#a5a5a5;
+            border: 1px solid #2f2f2f;
+            border-radius: 6px;
+        }
+
+        .help_btn{
+            background-color: #1351f9;
+            border-radius: 100px;
+            display: inline-block;
+            width: 120px;
+            height: 50px;
+            color:#fff;
+        }
+
+        .help_qs{
+            display: flex;
+            column-gap: 10px;
+            color: #a5a5a5;
+            color: nth($text,2);
+            align-items: center;
+            padding-top:20px;
+
+            dt{
+                font-size: 20px;
+            }
+        }
     }
+
+    .personal{
+        padding:50px 80px;
+        .personal_title{
+            display: flex;
+            justify-content: space-between;
+           
+        }
+        .personal_list{
+            display: flex;
+            justify-content: space-between;
+    
+        }
+    }
+    

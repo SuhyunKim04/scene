@@ -1,16 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-/*
-$modal : {
-    bg : #fff
-}
-
-$btn : {
-    active : ,
-    disable :, 
-}
-
-*/
 body, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, fieldset, button, select, textarea, figure, figcaption {
   margin: 0;
   padding: 0;
@@ -255,8 +244,56 @@ h1 {
   color: #a5a5a5;
 }
 
-.customer_list {
-  margin-left: 30px;
+.search_help {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  background-color: #252525;
+  padding: 50px 150px;
+}
+.search_help h2 {
+  padding-bottom: 20px;
+}
+.search_help .search_help_bar {
+  width: 560px;
+  height: 46px;
+  background-color: #2f2f2f;
+  color: #a5a5a5;
+  border: 1px solid #2f2f2f;
+  border-radius: 6px;
+}
+.search_help .help_btn {
+  background-color: #1351f9;
+  border-radius: 100px;
+  display: inline-block;
+  width: 120px;
+  height: 50px;
+  color: #fff;
+}
+.search_help .help_qs {
+  display: flex;
+  column-gap: 10px;
+  color: #a5a5a5;
+  color: mute #ddd;
+  align-items: center;
+  padding-top: 20px;
+}
+.search_help .help_qs dt {
+  font-size: 20px;
+}
+
+.personal {
+  padding: 50px 80px;
+}
+.personal .personal_title {
+  display: flex;
+  justify-content: space-between;
+}
+.personal .personal_list {
+  display: flex;
+  justify-content: space-between;
 }
 
 /*# sourceMappingURL=common.css.map */

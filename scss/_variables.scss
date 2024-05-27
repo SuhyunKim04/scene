@@ -21,6 +21,18 @@ $text : (
     body : #a5a5a5
 );
 
+$helpinput:(
+    border: 1px solid #2f2f2f,
+    color: #a5a5a5,
+    background-color: #2f2f2f
+);
+
+$blue :  (
+    background-color: #1351f9,
+    border-radius: 100px,
+    display: inline-block,
+    color: #fff
+)
 
 // p { color : map-get($text, active);
 
