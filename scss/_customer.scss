@@ -4,9 +4,10 @@
 }
     .customer{
         .customer_menu{
-            display: flex;
+            @include flex($j:space-around);
+            
             cursor: pointer;
-            justify-content:space-around;
+            
             margin: 0 20px;
             height: 60px;
             color:#a5a5a5;
@@ -14,13 +15,13 @@
     }
 
     .search_help{
-        position: fixed;
-        top:50%;
-        left:50%;
-        transform: translate(-50%,-50%);
-        width: 100%;
+        outline: 1px solid red;
         background-color: #252525;
         padding: 50px 150px;
+      
+        .search_inner{
+            @include flex;
+        }
 
         h2{
             padding-bottom: 20px;
@@ -47,7 +48,7 @@
         .help_qs{
             display: flex;
             column-gap: 10px;
-            color: #a5a5a5;
+            @debug nth($text,2);
             color: nth($text,2);
             align-items: center;
             padding-top:20px;

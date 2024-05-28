@@ -127,6 +127,12 @@ h1 {
   padding-top: 110px;
 }
 
+.base_width {
+  width: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
 .page_header {
   display: flex;
   align-items: center;
@@ -237,21 +243,23 @@ h1 {
 
 .customer .customer_menu {
   display: flex;
-  cursor: pointer;
   justify-content: space-around;
+  align-items: center;
+  cursor: pointer;
   margin: 0 20px;
   height: 60px;
   color: #a5a5a5;
 }
 
 .search_help {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
+  outline: 1px solid red;
   background-color: #252525;
   padding: 50px 150px;
+}
+.search_help .search_inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .search_help h2 {
   padding-bottom: 20px;
@@ -276,7 +284,6 @@ h1 {
   display: flex;
   column-gap: 10px;
   color: #a5a5a5;
-  color: mute #ddd;
   align-items: center;
   padding-top: 20px;
 }

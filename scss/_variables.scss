@@ -15,12 +15,6 @@ $input : (
 $text : #fff, #a5a5a5;
 // p { color : nth($text, 2) }
 
-$text : (
-    active : #fff,
-    mute : #ddd,
-    body : #a5a5a5
-);
-
 $helpinput:(
     border: 1px solid #2f2f2f,
     color: #a5a5a5,

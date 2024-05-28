@@ -52,7 +52,7 @@
 
    
 
-    <main class="page_main">
+    <main class="page_main base_width">
         <h2 class="blind">Customer</h2>
         <div class="customer">
             <ul class="customer_menu">
@@ -67,22 +67,24 @@
 
         <div class="search_help">
             <h2>무엇을 도와드릴까요?</h2>
-            <form id="task">
-                <fieldset>
-                    <legend>Help Questions</legend>
-                    <input type="search" placeholder="궁금하신 점이 있다면 검색 또는 도움말 카테고리를 선택하세요. (최대 50자)" name="task" class="search_help_bar">
-                    <button type="submit" class="help_btn blue">
-                        검색
-                    </button>
-                </fieldset>
-
+                <form id="task">
+                    <fieldset>
+                        <legend>Help Questions</legend>
+                        <div class="search_inner">
+                            <input type="search" placeholder="궁금하신 점이 있다면 검색 또는 도움말 카테고리를 선택하세요. (최대 50자)" name="task" class="search_help_bar">
+                            <button type="submit" class="help_btn blue">
+                                검색
+                            </button>
+                        </div>
+                       
+                    </fieldset>
+                </form>
                 <dl class="help_qs">
                     <dt>자주하는 질문</dt>
                     <dd>자동결제 해지 방법 알려주세요</dd>
                     <dd>구매했는데 볼 수가 없어요</dd>
                     <dd>로그인이 안돼요</dd>
                 </dl>
-            </form>
         </div>
 
 
