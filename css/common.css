@@ -263,6 +263,7 @@ h1 {
 }
 .search_help h2 {
   padding-bottom: 20px;
+  text-align: center;
 }
 .search_help .search_help_bar {
   width: 560px;
@@ -291,16 +292,30 @@ h1 {
   font-size: 20px;
 }
 
-.personal {
-  padding: 50px 80px;
+.personal_box {
+  color: #a5a5a5;
+  padding-bottom: 20px;
 }
-.personal .personal_title {
-  display: flex;
-  justify-content: space-between;
+.personal_box h3 {
+  text-align: center;
+  margin-top: 30px;
+  font-weight: 600;
 }
-.personal .personal_list {
-  display: flex;
-  justify-content: space-between;
+.personal_box .personal_list {
+  margin-top: 20px;
+}
+.personal_box .personal_list strong {
+  padding-right: 150px;
+}
+.personal_box .personal_list .list {
+  padding: 30px 0;
+}
+
+.new_btn {
+  background-color: #1351f9;
+  display: inline-block;
+  padding: 12px;
+  border-radius: 20px;
 }
 
 /*# sourceMappingURL=common.css.map */

@@ -1,0 +1,9 @@
+.detail{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 450px;
+    outline: 1px solid green;
+    div{
+        @include flex($j:space-around)
+    }
+}
