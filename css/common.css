@@ -1,5 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Jersey+15&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0");
+/*
+$modal : {
+    bg : #fff
+}
+
+$btn : {
+    active : ,
+    disable :, 
+}
+
+*/
+.page_header .inner, .page_main {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1240px;
+}
+
 body, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, fieldset, button, select, textarea, figure, figcaption {
   margin: 0;
   padding: 0;
@@ -134,24 +153,23 @@ h1 {
 }
 
 .page_header {
-  display: flex;
-  align-items: center;
-  height: 80px;
   position: fixed;
   width: 100%;
   left: 0;
   top: 0;
   z-index: 1000;
-  justify-content: space-around;
   transition: background-color 0.4s ease-in-out;
+}
+.page_header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
 }
 .page_header.open {
   background-color: #000;
   opacity: 0.9;
   color: #fff;
-}
-.page_header h1 {
-  margin-left: 20px;
 }
 .page_header .gnb {
   margin-left: 60px;
@@ -172,29 +190,33 @@ h1 {
   background-color: #000;
   color: #fff;
 }
-.page_header .my_account {
+.page_header .account-container {
+  position: relative;
+  outline: 1px solid red;
+}
+.page_header .account-container .profile {
   width: 34px;
   height: 34px;
   border-radius: 6px;
   background-color: aqua;
   cursor: pointer;
 }
-.page_header .my_account .account_modal {
-  background-color: #000;
+.page_header .account-container .account_modal {
+  background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 70px;
-  right: 20px;
+  right: 0;
   width: 160px;
   color: #fff;
   padding: 10px;
 }
-.page_header .my_account .account_modal li {
+.page_header .account-container .account_modal li {
   margin-bottom: 4px;
   display: flex;
   align-items: center;
   column-gap: 10px;
 }
-.page_header .my_account .account_modal.open {
+.page_header .account-container .account_modal.open {
   display: block;
 }
 
@@ -215,6 +237,7 @@ h1 {
 .slide_main h2 {
   font-family: "Jersey 15", sans-serif;
   font-size: 26px;
+  margin: 20px 0;
 }
 .slide_main .slide_box {
   display: flex;
@@ -226,6 +249,10 @@ h1 {
   height: 330px;
   outline: 1px solid red;
   overflow: hidden;
+  border-radius: 10px;
+}
+.slide_main .slide_box li:hover img {
+  transform: scale(1.1);
 }
 .slide_main .slide_box li a {
   display: block;
@@ -234,6 +261,7 @@ h1 {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  transition: 0.5s;
 }
 
 .test {
@@ -332,11 +360,29 @@ h1 {
 
 .detail_vod {
   position: relative;
+  height: 698px;
+}
+.detail_vod:after {
+  content: "";
+  background-image: url("../images/detail_gra_bg.png");
+  display: block;
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2;
+}
+.detail_vod .poster {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 .detail_vod .inner {
-  padding: 0 30px;
   position: absolute;
-  bottom: 50px;
+  bottom: 16px;
+  left: 0;
+  z-index: 3;
 }
 .detail_vod .inner h2 {
   font-family: "Jersey 15", sans-serif;
@@ -344,28 +390,34 @@ h1 {
   padding-bottom: 16px;
 }
 .detail_vod .inner p {
-  padding-bottom: 16px;
   color: #a5a5a5;
+  max-width: 770px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
 }
-.detail_vod .inner .modi {
+.detail_vod .inner .tool_bar {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 16px;
 }
-.detail_vod .inner .modi .detail_login {
+.detail_vod .inner .tool_bar .detail_login {
   background-color: #1351f9;
   padding: 12px 80px;
   display: block;
   border-radius: 10px;
   margin-right: 30px;
 }
-.detail_vod .inner .modi ul {
+.detail_vod .inner .tool_bar ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.detail_vod .inner .modi ul li {
+.detail_vod .inner .tool_bar ul li {
   margin-right: 12px;
 }
 
@@ -373,6 +425,23 @@ h1 {
   font-family: "Jersey 15", sans-serif;
   font-size: 26px;
   margin: 20px 0;
+}
+
+.live {
+  margin: 0 50px;
+}
+.live .live_title {
+  margin-top: 80px;
+  background-color: #252525;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.live .live_title .wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 footer {

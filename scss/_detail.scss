@@ -13,10 +13,23 @@
 //vod_detail//
 .detail_vod{
     position: relative;
+    height: 698px;
+    &:after{
+        content:'';
+        background-image: url($img + 'detail_gra_bg.png');
+        display: block;
+        @include position($l:0,$t:0,$r:0,$b:0);
+        z-index: 2;
+    }
+    .poster{
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
     .inner{
-        padding: 0 30px;
-        @include position($b:50px);
-
+       @include position($l:0, $b:16px);
+       z-index: 3;
+        
         h2{
         
             font-family: "Jersey 15", sans-serif;
@@ -24,12 +37,14 @@
             padding-bottom: 16px;
         }
         p{
-            padding-bottom: 16px;
             color: nth($text,2);
+            max-width: 770px;
+            width: 100%;
+            @include textline;
         }
         
 
-        .modi{
+        .tool_bar{
             @include flex($j:flex-start);
             padding-bottom: 16px;
             

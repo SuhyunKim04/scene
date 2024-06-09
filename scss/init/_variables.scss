@@ -1,7 +1,11 @@
+$img : '../images/';
+$photo : $img + 'photos/';
+
+
 
 $corner : (
     base : 3px,
-    round : 30px
+    round : 10px
 );
 
 // input design
@@ -9,7 +13,7 @@ $input : (
     height : 30px,
     bg : black,
     border : 1px solid red,
-    radius : map-get($corner, round)
+    radius : 30px
 );
 
 $text : #fff, #a5a5a5;
@@ -26,7 +30,11 @@ $blue :  (
     border-radius: 100px,
     display: inline-block,
     color: #fff
-)
+);
+
+$back: (
+    background-color: #252525
+);
 
 // p { color : map-get($text, active);
 

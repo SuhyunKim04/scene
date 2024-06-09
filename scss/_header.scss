@@ -1,14 +1,15 @@
- 
-
-.page_header{
-    display: flex;
-    align-items: center;
-    height: 80px;
+ .page_header{
+    .inner{
+        @extend %main;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+    }
     position: fixed;
     width: 100%;
     left:0;top:0;
     z-index: 1000;
-    justify-content: space-around;
     transition: background-color 0.4s ease-in-out;
     // @include flex($j:space-around,$a:center);
     // @include position($p:fixed,$l:0,$t:0);
@@ -19,9 +20,6 @@
         color: #fff;
     }
 
-    h1{
-        margin-left: 20px;
-    }
 
     .gnb{
         margin-left: 60px;
@@ -47,19 +45,25 @@
         }
     }
 
-    .my_account{
-        width: 34px;
-        height: 34px;
-        border-radius: 6px;
-        background-color:aqua;
-        cursor: pointer;
+    .account-container{
+        position:relative;
+        outline:1px solid red;
+
+        .profile {
+            width: 34px;
+            height: 34px;
+            border-radius: 6px;
+            background-color:aqua;
+            cursor: pointer;
+
+        }
 
         .account_modal{
             // display: none;
-            background-color: #000;
+            background-color: rgba(#000, 0.5);
             position: absolute;
             top: 70px;
-            right:20px;
+            right:0;
             width: 160px;
             color: #fff;
             padding: 10px;
