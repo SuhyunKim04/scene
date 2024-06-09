@@ -7,11 +7,12 @@
     background:$bg;
 }
 
-@mixin flex($a:center, $j:space-between, $d:null) {
+@mixin flex($a:center, $j:space-between, $d:null, $c:null) {
     display: flex;
     justify-content: $j;
     align-items: $a;
     flex-direction: $d;
+    column-gap: $c;
 }
 
 @mixin center($p:fixed){

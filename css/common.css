@@ -318,4 +318,17 @@ h1 {
   border-radius: 20px;
 }
 
+footer {
+  margin: 50px 0;
+}
+footer .footer_common {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 20px;
+}
+footer p {
+  padding: 20px 0;
+}
+
 /*# sourceMappingURL=common.css.map */
