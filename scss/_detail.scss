@@ -7,3 +7,55 @@
         @include flex($j:space-around)
     }
 }
+
+
+
+//vod_detail//
+.detail_vod{
+    position: relative;
+    .inner{
+        padding: 0 30px;
+        @include position($b:50px);
+
+        h2{
+        
+            font-family: "Jersey 15", sans-serif;
+            font-size: 50px;
+            padding-bottom: 16px;
+        }
+        p{
+            padding-bottom: 16px;
+            color: nth($text,2);
+        }
+        
+
+        .modi{
+            @include flex($j:flex-start);
+            padding-bottom: 16px;
+            
+            .detail_login{
+                background-color: map-get($blue, background-color);
+                padding: 12px 80px;
+                display: block;
+                border-radius: 10px;
+                margin-right: 30px;
+            }
+            
+            ul{
+                @include flex;
+                li{
+                    margin-right: 12px;
+                }
+            }
+        }
+    }
+    
+}
+
+.detail_vod_similar{
+    h3{
+        font-family: "Jersey 15", sans-serif;
+        font-size: 26px;
+        margin: 20px 0;
+    }
+}
