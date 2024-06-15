@@ -2,9 +2,16 @@
     margin: 0 auto;
     width: 100%;
     max-width: 450px;
-    outline: 1px solid green;
+    // outline: 1px solid green;
+    color: nth($text,2);
+
+    h2{
+        font-size: 20px;
+        margin: 20px 0;
+    }
     div{
-        @include flex($j:space-around)
+        @include flex($j:space-around);
+        margin: 20px 0;
     }
 }
 
@@ -46,7 +53,7 @@
 
         .tool_bar{
             @include flex($j:flex-start);
-            padding-bottom: 16px;
+            padding: 16px 0;
             
             .detail_login{
                 background-color: map-get($blue, background-color);

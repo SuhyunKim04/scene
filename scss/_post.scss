@@ -1,18 +1,11 @@
-.test{
-    position: relative;
-    top: 100px;
-}
-    .customer{
-        .customer_menu{
-            @include flex($j:space-around);
-            
-            cursor: pointer;
-            
-            margin: 0 20px;
-            height: 60px;
-            color:#a5a5a5;
-        }
+.page_main{
+    .title{
+        color:nth($text,2);
+        font-weight: 600;
+        margin: 20px 0;
     }
+}
+   
 
     .search_help{
         outline: 1px solid red;
@@ -70,13 +63,29 @@
 
        .personal_list{
         margin-top: 20px;
-        strong{
-            padding-right: 150px;
-        }
-        .list{
-            padding: 30px 0;
-        }
+        li{
+            font-size: 14px;
 
+            button{
+                font-size: 18px;
+                margin-bottom: 20px;
+
+                strong{
+                    margin-right: 30px;
+                }
+            }
+        }
+        
+            .personal_inner{
+                strong{
+                    padding-right: 150px;
+
+                }
+                .list{
+                    padding: 30px 0;
+                    
+                }
+            }
        }
     }
 
