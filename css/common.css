@@ -13,7 +13,7 @@ $btn : {
 }
 
 */
-.page_header .inner, .page_main {
+.sub_title .inner, .page_header .inner, .page_main {
   width: 100%;
   margin: 0 auto;
   max-width: 1240px;
@@ -165,6 +165,17 @@ h1 {
   justify-content: space-between;
   align-items: center;
   height: 80px;
+}
+.page_header .inner .left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page_header .inner .right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
 }
 .page_header.open {
   background-color: #000;
@@ -323,15 +334,18 @@ h1 {
 .personal_box .personal_list {
   margin-top: 20px;
 }
-.personal_box .personal_list li {
+.personal_box .personal_list .personal_items {
   font-size: 14px;
+  margin-bottom: 16px;
 }
-.personal_box .personal_list li button {
-  font-size: 18px;
-  margin-bottom: 20px;
+.personal_box .personal_list .personal_items dt {
+  cursor: pointer;
 }
-.personal_box .personal_list li button strong {
-  margin-right: 30px;
+.personal_box .personal_list .personal_items.on dd {
+  display: block;
+}
+.personal_box .personal_list .personal_inner {
+  display: none;
 }
 .personal_box .personal_list .personal_inner strong {
   padding-right: 150px;
@@ -433,18 +447,17 @@ h1 {
   margin: 20px 0;
 }
 
-.live {
-  margin: 0 50px;
-}
-.live .live_title {
-  margin-top: 80px;
+.sub_title {
   background-color: #252525;
+  margin-top: 80px;
+}
+.sub_title .inner {
   padding: 40px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.live .live_title .wrap {
+.sub_title .inner .wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -457,7 +470,7 @@ footer .footer_common {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  column-gap: 20px;
+  gap: 20px;
 }
 footer p {
   padding: 20px 0;

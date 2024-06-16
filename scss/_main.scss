@@ -1,10 +1,10 @@
-.live{
-    margin: 0 50px;
-    .live_title{
-        margin-top: 80px;
-        background-color: map-get($back, background-color );
+.sub_title{
+    background-color: map-get($back, background-color );
+    margin-top: 80px;
+    .inner{
         padding: 40px 0;
         @include flex;
+        @extend %main;
 
         .wrap{
             @include flex;

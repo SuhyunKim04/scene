@@ -1,5 +1,3 @@
-
-
 function slideContens(){
     const $list = $('.slide_main .slide_box')
     $list.slick({
@@ -22,7 +20,7 @@ const drop_down = ()=> {
   })
 }
 
-drop_down();
+// drop_down();
 
 
 const header_scroll = ()=>{
@@ -37,4 +35,44 @@ const header_scroll = ()=>{
   })
 }
 
+
+const faq = ()=>{
+  const lists = document.querySelectorAll('.personal_list .personal_items');
+  
+  let active = 0
+  lists[active].classList.add('on');
+  
+  lists.forEach((li,index) => {
+    li.addEventListener('click', (e)=>{
+     
+      let isSame = index === active; 
+
+      if(isSame){
+        let hasOn = li.classList.contains('on')
+        if(hasOn) {
+          li.classList.remove('on')
+          } else {
+          li.classList.add('on') 
+        }
+
+      }else{
+        lists[active].classList.remove('on')
+        li.classList.add('on') 
+      }
+      
+      active = index;
+      
+     // 켜져있는 인덱스번호(currentIndex)를 켜고, 클릭한애가 켜져있는 인덱스번호라면 ㄱ숨기고, 
+     //클릭한애가 켜져있지 않다면, 현재인덱스넘버의 클래스를 지우고,클릭한애를 켠다.
+
+
+
+      
+    })
+  })
+   
+}
+
+
 header_scroll();
+faq();

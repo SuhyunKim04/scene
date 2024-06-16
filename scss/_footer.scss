@@ -2,7 +2,7 @@ footer{
     margin: 50px 0;
 
     .footer_common{
-        @include flex($j: flex-start, $c: 20px)
+        @include flex($j: flex-start, $g: 20px)
     }
     p{
         padding: 20px 0;
