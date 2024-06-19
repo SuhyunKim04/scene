@@ -12,3 +12,20 @@
     }
    
 }
+
+.mypage{
+    background-color:#234160 ;
+}
+
+///mypage///
+.common{
+    .watched_list{
+        @include flex($j:flex-start);
+        li{
+            width: 250px;
+            height: 140px;
+            margin-left:20px;
+        }
+    }
+
+}

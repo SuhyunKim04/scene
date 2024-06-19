@@ -463,6 +463,21 @@ h1 {
   align-items: center;
 }
 
+.mypage {
+  background-color: #234160;
+}
+
+.common .watched_list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.common .watched_list li {
+  width: 250px;
+  height: 140px;
+  margin-left: 20px;
+}
+
 footer {
   margin: 50px 0;
 }
