@@ -350,7 +350,7 @@ video {
 }
 
 .personal_list .item {
-  padding: 12px 0;
+  padding: 1em 2.5em;
   border: 1px solid #2f2f2f;
   border-width: 0 0 1px 0;
 }
@@ -358,6 +358,14 @@ video {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 2em;
+}
+.personal_list .post_title {
+  flex-grow: 1;
+}
+.personal_list .new a:after {
+  content: "NEW";
+  color: blue;
 }
 
 .faq_box {

@@ -79,12 +79,24 @@
 
     .personal_list{
         .item{
-            padding: 12px 0;
+            padding:1em 2.5em;
             border: 1px solid #2f2f2f;
             border-width: 0 0 1px 0;
             dl{
-                @include flex;
+                @include flex($g:2em);
                 
+            }
+        }
+
+        .post_title {
+            flex-grow:1;
+        }
+        
+
+        .new {
+            a:after {
+                content: 'NEW';
+                color:blue;
             }
         }
         
