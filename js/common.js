@@ -37,7 +37,7 @@ const header_scroll = ()=>{
 
 
 const faq = ()=>{
-  const lists = document.querySelectorAll('.personal_list .personal_items');
+  const lists = document.querySelectorAll('.faq_list .faq_items');
   
   let active = 0
   lists[active].classList.add('on');

@@ -327,35 +327,50 @@ video {
   font-size: 20px;
 }
 
-.personal_box {
+.per_common {
   color: #a5a5a5;
   padding-bottom: 20px;
 }
-.personal_box h3 {
+.per_common h3 {
   text-align: center;
   margin-top: 30px;
   font-weight: 600;
   padding-bottom: 30px;
 }
-.personal_box .personal_header {
+
+.personal_header {
   border: 1px solid #2f2f2f;
   border-width: 1px 0;
   padding: 12px 0;
 }
-.personal_box .personal_header dl {
+.personal_header dl {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.personal_box .personal_list .item {
+
+.personal_list .item {
   padding: 12px 0;
   border: 1px solid #2f2f2f;
   border-width: 0 0 1px 0;
 }
-.personal_box .personal_list .item dl {
+.personal_list .item dl {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.faq_box {
+  margin-top: 20px;
+}
+.faq_box .faq_items dt {
+  cursor: pointer;
+}
+.faq_box .faq_items.on dd {
+  display: block;
+}
+.faq_box .faq_inner {
+  display: none;
 }
 
 .new_btn {
