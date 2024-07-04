@@ -287,7 +287,6 @@ video {
 }
 
 .search_help {
-  outline: 1px solid red;
   background-color: #252525;
   padding: 50px 150px;
 }
@@ -338,10 +337,33 @@ video {
   padding-bottom: 30px;
 }
 
+.faq_box {
+  margin-top: 20px;
+}
+.faq_box .faq_list {
+  border-top: 1px solid #2f2f2f;
+}
+.faq_box .faq_items dt {
+  cursor: pointer;
+  border-bottom: 1px solid #2f2f2f;
+  padding: 26px 0;
+}
+.faq_box .faq_items dt strong {
+  padding-right: 20px;
+}
+.faq_box .faq_items.on dd {
+  display: block;
+  padding: 26px 0;
+  border-bottom: 1px solid #2f2f2f;
+}
+.faq_box .faq_inner {
+  display: none;
+}
+
 .personal_header {
-  border: 1px solid #2f2f2f;
-  border-width: 1px 0;
-  padding: 12px 0;
+  border-bottom: 1px solid #2f2f2f;
+  border-top: 1px solid #2f2f2f;
+  padding: 12px 2em;
 }
 .personal_header dl {
   display: flex;
@@ -350,9 +372,8 @@ video {
 }
 
 .personal_list .item {
-  padding: 1em 2.5em;
-  border: 1px solid #2f2f2f;
-  border-width: 0 0 1px 0;
+  padding: 1em 2em;
+  border-bottom: 1px solid #2f2f2f;
 }
 .personal_list .item dl {
   display: flex;
@@ -366,19 +387,6 @@ video {
 .personal_list .new a:after {
   content: "NEW";
   color: blue;
-}
-
-.faq_box {
-  margin-top: 20px;
-}
-.faq_box .faq_items dt {
-  cursor: pointer;
-}
-.faq_box .faq_items.on dd {
-  display: block;
-}
-.faq_box .faq_inner {
-  display: none;
 }
 
 .new_btn {
@@ -397,11 +405,41 @@ video {
   font-size: 20px;
   margin: 20px 0;
 }
-.detail div {
+.detail .personal_header {
+  border-bottom: 1px solid #2f2f2f;
+  border-top: 1px solid #2f2f2f;
+  padding: 12px 2em;
+}
+.detail .personal_header dl {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  margin: 20px 0;
+}
+.detail .personal_list .item {
+  padding: 1em 2em;
+  border-bottom: 1px solid #2f2f2f;
+}
+.detail .personal_list .item dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+.detail .personal_list .post_title {
+  flex-grow: 1;
+}
+.detail .personal_list .new a:after {
+  content: "NEW";
+  color: blue;
+}
+.detail .detail_inner {
+  padding: 0 2em;
+}
+.detail .detail_inner .detail_post {
+  margin-top: 20px;
+}
+.detail .detail_inner .detail_post p {
+  line-height: 2em;
 }
 
 .detail_vod {

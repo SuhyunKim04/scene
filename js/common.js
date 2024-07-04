@@ -74,6 +74,37 @@ const faq = ()=>{
 }
 
 
+const search = () => {
+  const fm = document.forms.task;
+  const faq_items = document.querySelectorAll('.faq_items dd');
+
+
+  let word = '결제';
+  let regExp = new RegExp(word, 'gi');
+
+  fm.addEventListener('submit', (e) => {
+    e.preventDefault();
+    findWord();
+
+  });
+
+  fm.word.addEventListener('keydown', findWord);
+
+  function findWord() {
+    let word = fm.word.value;
+    let regExp = new RegExp(word, 'i')
+
+    faq_items.forEach((dd, i) => {
+      if(regExp.test(dd.textContent)) {
+        dd.classList.add('on')
+      }else {
+        dd.classList.remove('on')
+      }
+    })
+  }
+}
+
 header_scroll();
 faq();
 
+search();

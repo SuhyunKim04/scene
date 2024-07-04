@@ -8,9 +8,55 @@
         font-size: 20px;
         margin: 20px 0;
     }
-    div{
-        @include flex($j:space-around);
-        margin: 20px 0;
+
+    //qna//
+    .personal_header{
+    @include border($p: bottom);
+    @include border($p: top);
+    padding: 12px 2em;
+        dl{
+            @include flex;
+        }
+    }
+
+    
+
+    .personal_list{
+        .item{
+            padding:1em 2em;
+            @include border($p: bottom);
+           
+            dl{
+                @include flex($g:2em);
+                
+            }
+        }
+
+        .post_title {
+            flex-grow:1;
+        }
+        
+
+        .new {
+            a:after {
+                content: 'NEW';
+                color:blue;
+            }
+        }
+        
+    }
+    //qna//
+
+    .detail_inner{
+        padding: 0 2em;
+
+        .detail_post{
+            margin-top: 20px;
+            p{
+                line-height: 2em;
+            }
+        }
+        
     }
 }
 

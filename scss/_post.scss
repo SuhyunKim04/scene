@@ -8,7 +8,6 @@
    
 
     .search_help{
-        outline: 1px solid red;
         background-color: #252525;
         padding: 50px 150px;
       
@@ -65,52 +64,27 @@
     }
 
     
-    //qna//
-    .personal_header{
-    border: 1px solid #2f2f2f;
-    border-width: 1px 0;
-    padding: 12px 0;
-        dl{
-            @include flex;
-        }
-    }
-
     
-
-    .personal_list{
-        .item{
-            padding:1em 2.5em;
-            border: 1px solid #2f2f2f;
-            border-width: 0 0 1px 0;
-            dl{
-                @include flex($g:2em);
-                
-            }
-        }
-
-        .post_title {
-            flex-grow:1;
-        }
-        
-
-        .new {
-            a:after {
-                content: 'NEW';
-                color:blue;
-            }
-        }
-        
-    }
-    //qna//
     
     .faq_box{
         margin-top:20px;
+        .faq_list{
+            @include border;
+        }
         .faq_items{
             dt{
                 cursor: pointer;
+                @include border($p: bottom);
+                padding: 26px 0;
+
+                strong{
+                    padding-right: 20px;
+                }
             }
             &.on dd{
                 display: block;
+                padding: 26px 0;
+                @include border($p: bottom);
             }
         }
 
@@ -120,6 +94,43 @@
     }
     
 
+     //qna//
+     .personal_header{
+        @include border($p: bottom);
+        @include border($p: top);
+        padding: 12px 2em;
+            dl{
+                @include flex;
+            }
+        }
+    
+        
+    
+        .personal_list{
+            .item{
+                padding:1em 2em;
+                @include border($p: bottom);
+               
+                dl{
+                    @include flex($g:2em);
+                    
+                }
+            }
+    
+            .post_title {
+                flex-grow:1;
+            }
+            
+    
+            .new {
+                a:after {
+                    content: 'NEW';
+                    color:blue;
+                }
+            }
+            
+        }
+        //qna//
 
 
     .new_btn{

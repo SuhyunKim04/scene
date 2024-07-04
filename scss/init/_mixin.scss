@@ -15,6 +15,10 @@
     gap:$g;
 }
 
+
+@mixin border($p:top) {
+    border-#{$p} : 1px solid #2f2f2f;
+}
 @mixin center($p:fixed){
     position: $p;
     top:50%;
