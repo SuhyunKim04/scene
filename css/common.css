@@ -390,9 +390,8 @@ video {
 
 .detail {
   margin: 0 auto;
-  width: 100%;
-  max-width: 450px;
   color: #a5a5a5;
+  padding-top: 120px;
 }
 .detail h2 {
   font-size: 20px;
