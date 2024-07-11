@@ -27,7 +27,8 @@
 
 
         li{
-            width: 260px; 
+            // width: 260px; 
+            flex-basis:260px;
             flex-shrink:0;
             height:330px;
             outline:1px solid red;

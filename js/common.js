@@ -75,12 +75,11 @@ const faq = ()=>{
 
 
 const search = () => {
-  const fm = document.forms.task;
-  const faq_items = document.querySelectorAll('.faq_items dd');
+  const fm = document.forms.searchFaq;
 
+  const faq_items = document.querySelectorAll('.faq_list li');
 
-  let word = '결제';
-  let regExp = new RegExp(word, 'gi');
+ 
 
   fm.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -88,17 +87,19 @@ const search = () => {
 
   });
 
-  fm.word.addEventListener('keydown', findWord);
+  fm.task.addEventListener('keydown', findWord);
 
   function findWord() {
-    let word = fm.word.value;
+    let word = fm.task.value;
     let regExp = new RegExp(word, 'i')
 
-    faq_items.forEach((dd, i) => {
-      if(regExp.test(dd.textContent)) {
-        dd.classList.add('on')
+    faq_items.forEach((li, i) => {
+      if(regExp.test(li.textContent)) {
+        console.log('true')
+        li.classList.remove('hidden')
       }else {
-        dd.classList.remove('on')
+        li.classList.add('hidden')
+        console.log('false')
       }
     })
   }

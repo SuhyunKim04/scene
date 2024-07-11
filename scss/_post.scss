@@ -72,6 +72,10 @@
             @include border;
         }
         .faq_items{
+
+            &.hidden {
+                display:none;
+            }
             dt{
                 cursor: pointer;
                 @include border($p: bottom);

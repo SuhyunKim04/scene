@@ -1,3 +1,12 @@
+
+
+@mixin media($width) {
+    @media all and (max-width: $width){
+        @content;
+    }
+}
+
+
 @mixin position($t:null, $r:null,$b:null,$l:null, $p:absolute,$bg:null){
     position: $p;
     bottom:$b;

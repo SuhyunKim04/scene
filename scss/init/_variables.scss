@@ -1,7 +1,12 @@
 $img : '../images/';
 $photo : $img + 'photos/';
+$icon : $img + 'icons/';
 
-
+$pc : 1240px;
+$tablet: 899px;
+$mobile: 720px;
+$android : 600px;
+$ios: 375px;
 
 $corner : (
     base : 3px,

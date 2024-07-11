@@ -1,0 +1,21 @@
+
+
+@include media($tablet){
+
+    .page_header{
+        .inner{
+            justify-content: space-around;
+        }
+    }
+    .slide_main {
+        .slide_box{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 20px;
+    
+            li{
+                height: 400px;
+            }
+        }
+    }
+}
