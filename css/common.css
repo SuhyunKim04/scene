@@ -594,6 +594,13 @@ video {
   background-size: auto 18px;
 }
 
+.cs_contents .cs_main {
+  display: flex;
+}
+.cs_contents .cs_main .cs_form input {
+  border: 1px solid #fff;
+}
+
 footer {
   padding: 80px 0 30px 0;
 }
