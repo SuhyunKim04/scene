@@ -1,12 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scene</title>
+        <link rel="stylesheet" href="./css/common.css">
+        <script src="./js/jquery-1.12.1.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <script src="./js/slick.min.js"></script>
+    </head>
 </head>
 <body>
-    <!-- 수정완료 -->
-     
+    <!-- 등록완료 -->
+    <header class="page_header">
+        <div class="inner">
+            <h1>
+                <a href="index.html">
+                    Scene
+                </a>
+            </h1>
+    
+            <nav class="gnb">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="./live.html">Live</a>
+                    </li>
+                    <li>
+                        <a href="./mypage.html">My</a>
+                    </li>
+                    <li>
+                        <a href="cs_faq.html">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="./cs_qna.html">QNA</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="search_box">
+                <form id="task">
+                    <fieldset>
+                        <legend>Search</legend>
+                        <input type="search" placeholder="search" name="task" class="search_bar">
+                        <button type="submit">
+                            <i class="material-symbols-outlined">
+                            search
+                            </i>
+                        </button>
+                    </fieldset>
+                </form>
+    
+            </div>
+            <div class="account-container">
+                <button type="button" class="profile">
+                    profile img
+                </button>
+                <ul class="account_modal">
+                    <li>
+                        <i class="material-symbols-outlined">
+                            edit
+                        </i>
+                        Profile
+                    </li>
+                    <li>
+                        <i class="material-symbols-outlined">
+                            person
+                        </i>Account
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="page_main base_width">
+        <section class="sub_title qna">
+            <div class="inner">
+                <h2>Customer <br>Q&A</h2>
+    
+            </div>
+        </section>
+    
+        <section class="cs_contents">
+            <form method="post">
+                <fieldset>
+                    <legend>폼</legend>
+                    <div class="cs_form">
+                        <label>
+                            <div class="name_line line">
+                                <p>이름:</p> <input type="text" name="cs_name" required>
+                            </div>
+                            
+                            <div class="email_line line">
+                                <p>email:</p>
+                                <input type="email" name="cs_email" required>
+                            </div>
+
+                            <div class="content_line line">
+                                <p>Contents: </p>
+                                <textarea></textarea>
+                            </div>
+
+                            <div class="file_line line">
+                                <p>Attached file</p>
+                                <input type="file" name="cs_file">
+                            </div>
+
+                        </label>
+                    </div>
+                    
+                </fieldset>
+                <button type="button" class="cs_cancel">Cancel</button>
+                <button type="button" class="cs_confirm">confirm</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="page_main">
+            <ul class="footer_common">
+                <li>회사소개</li>
+                <li>고객센터</li>
+                <li>회사소개</li>
+            </ul>
+            <p>2024 &copy; copyright by Suhyun All rights reserved.</p>
+        </div>
+        
+    </footer>
+    
+
+    <script src="./js/common.js"></script>
 </body>
 </html>

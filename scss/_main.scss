@@ -3,7 +3,7 @@
     margin-top: 80px;
     .inner{
         padding: 40px 0;
-        @include flex;
+        @include flex($j: center);
         @extend %main;
 
         .wrap{
@@ -27,6 +27,7 @@
 .sub_title h2{
     font-size: 20px;
     padding-bottom: 20px;
+    text-align: center;
 }
 .watched{
    .video_list{

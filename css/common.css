@@ -430,6 +430,12 @@ video {
   justify-content: space-between;
   align-items: center;
 }
+.detail .modify {
+  background-color: beige;
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin-top: 20px;
+}
 .detail .personal_list .item {
   padding: 1em 2em;
   border-bottom: 1px solid #2f2f2f;
@@ -452,6 +458,7 @@ video {
 }
 .detail .detail_inner .detail_post {
   margin-top: 20px;
+  padding-bottom: 20px;
 }
 .detail .detail_inner .detail_post p {
   line-height: 2em;
@@ -533,7 +540,7 @@ video {
 .sub_title .inner {
   padding: 40px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .sub_title .inner .wrap {
@@ -555,6 +562,7 @@ video {
 .sub_title h2 {
   font-size: 20px;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 .watched .video_list {
@@ -594,11 +602,38 @@ video {
   background-size: auto 18px;
 }
 
-.cs_contents .cs_main {
-  display: flex;
+.cs_contents .cs_form {
+  margin-top: 40px;
 }
-.cs_contents .cs_main .cs_form input {
+.cs_contents .cs_form input {
   border: 1px solid #fff;
+}
+.cs_contents .cs_form .file_line input {
+  border: hidden;
+}
+.cs_contents .cs_form .line {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 20px;
+}
+.cs_contents .cs_form .content_line {
+  display: block;
+}
+.cs_contents .cs_form .content_line textarea {
+  width: 100%;
+  height: 160px;
+}
+.cs_contents button {
+  padding: 10px;
+  border-radius: 20px;
+}
+.cs_contents .cs_cancel {
+  background-color: red;
+}
+.cs_contents .cs_confirm {
+  background-color: blue;
 }
 
 footer {

@@ -76,33 +76,63 @@
                 </ul>
             </div>
         </div>
-       
     </header>
 
-    <section class="sub_title qna">
-        <div class="inner">
-            <h2>Customer <br>Q&A</h2>
-
-        </div>
-    </section>
-
-    <section class="cs_contents">
-        <div class="cs_main">
+    <main class="page_main base_width">
+        <section class="sub_title qna">
+            <div class="inner">
+                <h2>Customer <br>Q&A</h2>
+    
+            </div>
+        </section>
+    
+        <section class="cs_contents">
             <form method="post">
-                    <fieldset>
-                        <legend>폼</legend>
-                        <div class="cs_form">
-                            <label>
+                <fieldset>
+                    <legend>폼</legend>
+                    <div class="cs_form">
+                        <label>
+                            <div class="name_line line">
                                 <p>이름:</p> <input type="text" name="cs_name" required>
-                            </label>
-                        </div>
-                       
-                    </fieldset>
+                            </div>
+                            
+                            <div class="email_line line">
+                                <p>email:</p>
+                                <input type="email" name="cs_email" required>
+                            </div>
+
+                            <div class="content_line line">
+                                <p>Contents: </p>
+                                <textarea></textarea>
+                            </div>
+
+                            <div class="file_line line">
+                                <p>Attached file</p>
+                                <input type="file" name="cs_file">
+                            </div>
+
+                        </label>
+                    </div>
                     
+                </fieldset>
+                <button type="button" class="cs_cancel">Cancel</button>
+                <button type="button" class="cs_confirm">confirm</button>
             </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="page_main">
+            <ul class="footer_common">
+                <li>회사소개</li>
+                <li>고객센터</li>
+                <li>회사소개</li>
+            </ul>
+            <p>2024 &copy; copyright by Suhyun All rights reserved.</p>
         </div>
-       
-    </section>
+        
+    </footer>
+    
 
     <script src="./js/common.js"></script>
 </body>
