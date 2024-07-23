@@ -42,7 +42,8 @@ video{
 .channel{
   margin-bottom: 30px;
 }
-  
+
+@import 'modal';
 @import 'header','index','post','detail','main','icon','form';
 @import 'footer';
 @import 'responsible';

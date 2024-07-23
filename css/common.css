@@ -168,6 +168,35 @@ video {
   margin-bottom: 30px;
 }
 
+.live_modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(51, 53, 48);
+  z-index: 1000;
+  height: 600px;
+  width: 500px;
+}
+.live_modal h3 {
+  background-color: blue;
+  padding: 26px 10px;
+}
+.live_modal .modal_list {
+  padding: 20px 30px 0;
+}
+.live_modal .modal_list li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+.live_modal .modal_list img {
+  width: 200px;
+  height: 140px;
+  border-radius: 10px;
+}
+
 .page_header {
   position: fixed;
   width: 100%;
