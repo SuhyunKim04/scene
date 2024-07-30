@@ -42,3 +42,10 @@
     -webkit-line-clamp: $size;
     -webkit-box-orient: vertical;
 }
+
+@mixin full ($p:absolute, $b:0) {
+    position: $p;
+    left:0;right:0;
+    top:0;bottom:$b;
+}
+

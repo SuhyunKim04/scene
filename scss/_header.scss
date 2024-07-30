@@ -1,4 +1,12 @@
- .page_header{
+.dimm{
+    @include full(fixed);
+    background: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 1000;
+}
+ 
+ 
+.page_header{
     .inner{
         @extend %main;
         display: flex;
@@ -18,8 +26,7 @@
     left:0;top:0;
     z-index: 1000;
     transition: background-color 0.4s ease-in-out;
-    // @include flex($j:space-around,$a:center);
-    // @include position($p:fixed,$l:0,$t:0);
+ 
     
     &.open{
         background-color: #000;
@@ -88,3 +95,4 @@
         }
     }
 }
+

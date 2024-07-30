@@ -11,6 +11,15 @@ function slideContens(){
 
 // slideContens();
 
+const dimm = document.querySelector('.dimm')
+const openDimm = () => {
+  dimm.style.display = 'block'
+}
+
+const closeDimm = () => {
+  dimm.style.display = 'none'
+}
+
 const drop_down = ()=> {
   const account = document.querySelector('.my_account');
   const account_modal = document.querySelector('.account_modal')
@@ -105,6 +114,26 @@ const search = () => {
   }
 }
 
+
+const viewWhite = () => {
+  const white = document.querySelector('.white')
+  const whiteBtn = document.querySelector('.btn_ham')
+
+  whiteBtn.addEventListener('click', (e) => {
+    white.classList.add('open')
+    openDimm();
+  })
+
+  dimm.addEventListener('click', (e) => {
+    white.classList.remove('open')
+    closeDimm();
+  })
+}
+
+
+
+
+viewWhite();
 header_scroll();
 faq();
 
