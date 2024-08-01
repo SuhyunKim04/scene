@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Scene</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./css/common.css">
+        <script src="./js/jquery-1.12.1.js"></script>
+        <script src="./js/jquery-ui.min.js"></script>
+        <script src="./js/slick.min.js"></script>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+<body>
+    <div class="dimm"></div>
+    <header class="page_header">
+        <div class="inner">
+            <h1>
+                <a href="index.html">
+                    Scene
+                </a>
+            </h1>
+    
+            <div class="white">
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./live.html">Live</a>
+                        </li>
+                        <li>
+                            <a href="./mypage.html">My</a>
+                        </li>
+                        <li>
+                            <a href="cs_faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./cs_qna.html">QNA</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <div class="btn_ham">
+                <a class="menu" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+            
+            <div class="search_box">
+                <form id="task">
+                    <fieldset>
+                        <legend>Search</legend>
+                        <input type="search" placeholder="search" name="task" class="search_bar">
+                        <button type="submit">
+                            <i class="material-symbols-outlined">
+                            search
+                            </i>
+                        </button>
+                    </fieldset>
+                </form>
+    
+            </div>
+            <div class="account-container">
+                <button type="button" class="profile">
+                    profile img
+                </button>
+                <ul class="account_modal">
+                    <li>
+                        <i class="material-symbols-outlined">
+                            edit
+                        </i>
+                        Profile
+                    </li>
+                    <li>
+                        <i class="material-symbols-outlined">
+                            person
+                        </i>Account
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <button class="btnModal" data-modal="live">dkdk</button>
+    <button class="btnModal" data-modal="faq">dkdk</button>
+    <div class="live_modal">
+        <h3>시청예약</h3>
+
+        <ul class="modal_list">
+            <li>
+                <img src="./images/photos/nature/nature_4.jpg" alt="nature">
+                <div>
+                    <p>놀면 뭐하니? 스페셜</p>
+                    <time>2024-03-13</time>
+                    <p>MBC</p>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <section class="sub_title">
+        <div class="inner">
+            <h2>LIVE</h2>
+            <ul>
+                <li>
+                    <a href="#">
+                        <i class="icon clock"></i>
+                        <strong>시청예약</strong>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
+    </section>
+
+    <main class="page_main">
+        <h3 class="channel">ALL CHANNEL</h3>
+
+        <!-- component -->
+         <div class=""></div>
+         
+ 
+
+
+        <div class="relative flex">
+            <div>
+                <!-- video list - row 2-->
+                <div class="gap-6 mx-4 md:flex">
+                    <div class="md:w-1/4 live_tv">
+                        <div class="wrap-video">
+                            <video class="object-cover h-40 w-full bg-black" loop="" >
+                                <source 
+                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <span class="pt-4 grid grid-cols-6 gap-4">
+                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                YTN
+                            </span>
+                        </span>
+                        <span class="block text-slate-400 text-xs uppercase font-mono">
+                                뉴스 
+                        </span>
+                    </div>
+                    <div class="md:w-1/4 live_tv">
+                        <div class="wrap-video">
+                            <video class="object-cover h-40 w-full bg-black" loop="" >
+                                <source 
+                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <span class="pt-4 grid grid-cols-6 gap-4">
+                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                YTN
+                            </span>
+                        </span>
+                        <span class="block text-slate-400 text-xs uppercase font-mono">
+                                뉴스 
+                        </span>
+                    </div>
+                    <div class="md:w-1/4 live_tv">
+                        <div class="wrap-video">
+                            <video class="object-cover h-40 w-full bg-black" loop="" >
+                                <source 
+                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <span class="pt-4 grid grid-cols-6 gap-4">
+                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                YTN
+                            </span>
+                        </span>
+                        <span class="block text-slate-400 text-xs uppercase font-mono">
+                                뉴스 
+                        </span>
+                    </div>
+                    <div class="md:w-1/4 live_tv">
+                        <div class="wrap-video">
+                            <video class="object-cover h-40 w-full bg-black" loop="" >
+                                <source 
+                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <span class="pt-4 grid grid-cols-6 gap-4">
+                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                YTN
+                            </span>
+                        </span>
+                        <span class="block text-slate-400 text-xs uppercase font-mono">
+                                뉴스 
+                        </span>
+                    </div>
+                    
+                </div>
+
+                <div class="gap-6 mx-4 md:flex">
+                    <div class="md:w-1/4">
+                        <div class="wrap-video">
+                            <video class="object-cover h-40 w-full bg-black" loop="" >
+                                <source 
+                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <span class="pt-4 grid grid-cols-6 gap-4">
+                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                YTN
+                            </span>
+                        </span>
+                        <span class="block text-slate-400 text-xs uppercase font-mono">
+                                뉴스 
+                        </span>
+                    </div>
+                    <div class="md:w-1/4">
+                        <div class="wrap-video">
+                            <video class="object-cover h-40 w-full bg-black" loop="" >
+                                <source 
+                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <span class="pt-4 grid grid-cols-6 gap-4">
+                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                YTN
+                            </span>
+                        </span>
+                        <span class="block text-slate-400 text-xs uppercase font-mono">
+                                뉴스 
+                        </span>
+                    </div>
+                    <div class="md:w-1/4">
+                        <div class="wrap-video">
+                            <video class="object-cover h-40 w-full bg-black" loop="" >
+                                <source 
+                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <span class="pt-4 grid grid-cols-6 gap-4">
+                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                YTN
+                            </span>
+                        </span>
+                        <span class="block text-slate-400 text-xs uppercase font-mono">
+                                뉴스 
+                        </span>
+                    </div>
+                    <div class="md:w-1/4">
+                        <div class="wrap-video">
+                            <video class="object-cover h-40 w-full bg-black" loop="" >
+                                <source 
+                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                    type="video/mp4">
+                            </video>
+                        </div>
+                        <span class="pt-4 grid grid-cols-6 gap-4">
+                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                YTN
+                            </span>
+                        </span>
+                        <span class="block text-slate-400 text-xs uppercase font-mono">
+                                뉴스 
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+ 
+    </main>
+
+    <footer>
+        <div class="page_main">
+            <ul class="footer_common">
+                <li>회사소개</li>
+                <li>고객센터</li>
+                <li>회사소개</li>
+            </ul>
+            <p>2024 &copy; copyright by Suhyun All rights reserved.</p>
+        </div>
+        
+    </footer>
+
+    <script src="./js/common.js"></script>
+    <script>
+        var video = $('.wrap-video').hover(hoverVideo, hideVideo);
+    
+        function hoverVideo(e) {  
+            $('video', this).get(0).play(); 
+        }
+    
+        function hideVideo(e) {
+            $('video', this).get(0).pause(); 
+        }
+    </script>
+    
+</body>
+</html>

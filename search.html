@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fruits li.on{
+            display:block;
+        }
+
+        .fruits li {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <form name="myform">
+        <input type="search" placeholder="입력하세요" required name="word">
+        <button type="submit">검색</button>
+    </form>
+    <p class="result">
+        검색버튼을 눌러주세요요 
+    </p>
+    <ul class="fruits">
+        <li>apple</li>
+        <li>banana</li>
+        <li>watermelon</li>
+        <li>black banana</li>
+        <li>mango</li>
+        <li>apple mango</li>
+        <li>melon</li>
+        <li>strawberry</li>
+        <li>lemon kiwi</li>
+        <li>grapes</li>
+        <li>lemon</li>
+        <li>pear</li>
+        <li>orange</li>
+    </ul>
+
+    <p class="msg">hello mango Apple Lemon</p>
+
+
+    <script>
+        const fm = document.forms.myform;
+        const fruits = document.querySelectorAll('.fruits li')
+        const msg = document.querySelector('.msg').innerHTML;
+
+        const lis = ['apple', 'apple mango','banana','kiwi banana']
+        // console.log(fm, fruits);
+        let word = 'apple';
+        let regExp = new RegExp( word , 'gi'); //정규표현식
+        
+
+        fm.addEventListener('submit',(e) => {
+            e.preventDefault();
+            findFruits();
+        });
+
+        fm.word.addEventListener('keydown', findFruits);
+ 
+        function findFruits() { 
+            let word = fm.word.value;
+            let regExp = new RegExp(word, 'i');
+
+            fruits.forEach((li, i)=> { 
+                if(regExp.test(li.textContent)){ 
+                    li.classList.add('on')
+                }else { 
+                    li.classList.remove('on')
+                }
+            })
+        }
+        // let result = lis.match(regExp)
+       const result = lis.filter((a) => {
+         
+
+       })
+    
+    //    const result2 = lis.map((a,b) => {
+    //         if(a.match(word)){
+    //             return b
+    //         }else{return null}
+    //    })
+    //    console.log('result2:',result2)
+
+        // let nums = [1,3,5,10,7,5]
+        // const test = nums.filter((a,b) => {
+        //      return a < 5
+        // })
+
+        
+
+        //const test = nums.filter(a => a <5)
+
+        // console.log(test)
+        //검색어 가져오기
+        //li에 있는 단어랑 포함되어 있는지 체크
+        //만약 포함이 됐으면 
+        //인덱스 넘버 가져오기
+        //검색어에 걸리는 인덱스 넘버를 배열로 저장
+        //해당 li들을 순회해서 on 클래스를 add 한다.
+    </script>
+</body>
+</html>

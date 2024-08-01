@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <script src="./js/jquery-1.12.1.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="./js/slick.min.js"></script>
+</head>
+<body>
+    <div class="dimm"></div>
+    <header class="page_header">
+        <div class="inner">
+            <h1>
+                <a href="index.html">
+                    Scene
+                </a>
+            </h1>
+            <div class="white">
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./live.html">Live</a>
+                        </li>
+                        <li>
+                            <a href="./mypage.html">My</a>
+                        </li>
+                        <li>
+                            <a href="cs_faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./cs_qna.html">QNA</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <nav class="btn_ham">
+                <a class="menu" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
+            </nav>
+            
+            <div class="search_box">
+                <form id="task">
+                    <fieldset>
+                        <legend>Search</legend>
+                        <input type="search" placeholder="search" name="task" class="search_bar">
+                        <button type="submit">
+                            <i class="material-symbols-outlined">
+                            search
+                            </i>
+                        </button>
+                    </fieldset>
+                </form>
+            </div>
+
+            <div class="account-container">
+                <button type="button" class="profile">
+                    profile img
+                </button>
+                <ul class="account_modal">
+                    <li>
+                        <i class="material-symbols-outlined">
+                            edit
+                        </i>
+                        Profile
+                    </li>
+                    <li>
+                        <i class="material-symbols-outlined">
+                            person
+                        </i>Account
+                    </li>
+                </ul>
+            </div>
+        </div>
+       
+    </header>
+
+   
+
+    <main class="page_main base_width">
+        <h2 class="title">FAQ</h2>
+
+        <div class="search_help">
+            <h2>무엇을 도와드릴까요?</h2>
+                <form name="searchFaq">
+                    <fieldset>
+                        <legend>Help Questions</legend>
+                        <div class="search_inner">
+                            <input type="search" placeholder="궁금하신 점이 있다면 검색 또는 도움말 카테고리를 선택하세요. (최대 50자)" name="task" class="search_help_bar">
+                            <button type="submit" class="help_btn blue">
+                                검색
+                            </button>
+                        </div>
+                    </fieldset>
+                </form>
+
+                <dl class="help_qs">
+                    <dt>자주하는 질문</dt>
+                    <dd><a href="detail.html">해지 방법 알려주세요</a></dd>
+                    <dd>구매했는데 볼 수가 없어요</dd>
+                    <dd>로그인이 안돼요</dd>
+                </dl>
+        </div>
+
+
+        <div class="faq_box per_common">
+            <h3>Personal Questions</h3>
+            <ul class="faq_list">
+                <li class="faq_items ">
+                    <dl>
+                        <dt>
+                            <strong>바나나 / 결제</strong>
+                            <span>정기 결제 해지 방법 알려주세요 사과.</span>
+                        </dt>
+                    
+                        <dd class="faq_inner">
+                            <p>
+                                정기 결제를 해지할 경우, 다음 결제 회 차부터 결제가 중단되며, 정기 자동 결제가 중단됩니다.
+                            </p>
+                            <p>
+                                단, 현재 이용 중인 이용권은 만료일까지 이용 가능합니다.
+                            </p>
+                            <br>
+                            <p>
+                                1. PC : MY → 이용 중 이용권 → 이용권 내역 → 자동 결제 해지
+                            </p>   
+                            <p>
+                                2. Mobile APP : 우측 하단 MY → 상단 프로필(이름) 선택 → 나의 이용권 → 자동 결제 해지
+                            </p>
+                            <p>
+                                - Android/iOS 인앱 결제로 구독하신 이용권은 각 스토어로 구독 취소 신청하셔야 구독 해지 가능합니다.
+                            </p>
+                            <p>
+                                - 제휴사 (통신사 , 벅스 , 스카이라이프 등) 이용권은 해당 구매처를 통해 문의 바랍니다.
+                            </p>
+                        </dd>
+                    </dl>
+                </li>
+                <li class="faq_items">
+                    <dl>
+                        <dt>
+                            <strong>딸기 / 결제</strong>
+                            <span>정기 결제 해지 방법 알려주세요.</span>
+                        </dt>
+                    
+                        <dd class="faq_inner">
+                            <p>
+                                정기 결제를 해지할 경우, 다음 결제 회 차부터 결제가 중단되며, 정기 자동 결제가 중단됩니다.
+                            </p>
+                            <p>
+                                단, 현재 이용 중인 이용권은 만료일까지 이용 가능합니다.
+                            </p>
+                            <br>
+                            <p>
+                                1. PC : MY → 이용 중 이용권 → 이용권 내역 → 자동 결제 해지
+                            </p>   
+                            <p>
+                                2. Mobile APP : 우측 하단 MY → 상단 프로필(이름) 선택 → 나의 이용권 → 자동 결제 해지
+                            </p>
+                            <p>
+                                - Android/iOS 인앱 결제로 구독하신 이용권은 각 스토어로 구독 취소 신청하셔야 구독 해지 가능합니다.
+                            </p>
+                            <p>
+                                - 제휴사 (통신사 , 벅스 , 스카이라이프 등) 이용권은 해당 구매처를 통해 문의 바랍니다.
+                            </p>
+                        </dd>
+                </dl>
+                </li>
+            </ul>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="page_main">
+            <ul class="footer_common">
+                <li>회사소개</li>
+                <li>고객센터</li>
+                <li>회사소개</li>
+            </ul>
+            <p>2024 &copy; copyright by Suhyun All rights reserved.</p>
+        </div>
+        
+    </footer>
+ 
+
+   
+    <script src="./js/common.js"></script>
+</body>
+</html>

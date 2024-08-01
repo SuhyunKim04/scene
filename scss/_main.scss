@@ -1,0 +1,70 @@
+.sub_title{
+    background-color: map-get($back, background-color );
+    margin-top: 80px;
+    .inner{
+        padding: 40px 0;
+        @include flex($j: center);
+        @extend %main;
+
+        .wrap{
+            @include flex;
+        }
+    }
+
+    .profile_box{
+        @include flex;
+
+        .my_profile{
+            background-color: orange;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+    }
+
+    
+   
+}
+
+.mypage{
+    background-color:#234160 ;
+}
+
+///mypage///
+.account_name{
+    background-color: #2f2f2f;
+    padding: 60px 0;
+    margin-bottom: 50px;
+}
+
+.sub_title h2{
+    font-size: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.watched{
+   .video_list{
+    color: nth($text,2);
+    @include flex($j:flex-start, $g: 12px);
+    flex-wrap: wrap;
+        .my_video{
+            width:20vw;
+        }
+   }
+}
+
+.likes{
+    margin-top: 30px;
+    .likes_box{
+        display: flex;
+        gap:20px;
+
+        li{
+            width:20vw; 
+            flex-shrink:0;
+            height:40vh;
+            overflow:hidden;
+            border-radius: map-get($corner, round);
+        }
+    }
+}
