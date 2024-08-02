@@ -11,7 +11,7 @@
             
         }
 
-        .line{
+        li{
             @include flex($j: flex-start,$g:10px);
             padding-bottom: 20px;
         }

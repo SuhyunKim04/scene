@@ -87,36 +87,40 @@
         </section>
     
         <section class="cs_contents">
-            <form method="post">
+            <form name= "cs_form">
                 <fieldset>
                     <legend>폼</legend>
-                    <div class="cs_form">
-                        <label>
-                            <div class="name_line line">
-                                <p>이름:</p> <input type="text" name="cs_name" required>
-                            </div>
+                    <ul class="cs_form">
+                            <li class="name_line line">
+                                <label>
+                                    <span>이름:</span> <input type="text" name="cs_name" required>
+                                </label>
+                            </li>
                             
-                            <div class="email_line line">
-                                <p>email:</p>
-                                <input type="email" name="cs_email" required>
-                            </div>
+                            <li class="email_line line">
+                                <label>
+                                    <span>email:</span>
+                                    <input type="email" name="cs_email" required>
+                                </label>
+                                
+                            </li>
 
-                            <div class="content_line line">
-                                <p>Contents: </p>
-                                <textarea></textarea>
-                            </div>
+                            <li class="content_line line">
+                                <label for="qna_contents">Contents: </label>
+                                    <textarea id="qna_contents"></textarea>
+                            </li>
 
-                            <div class="file_line line">
-                                <p>Attached file</p>
-                                <input type="file" name="cs_file">
-                            </div>
-
-                        </label>
-                    </div>
+                            <li class="file_line line">
+                                <label>
+                                    <span>Attached file</span>
+                                    <input type="file" name="cs_file">
+                                </label>
+                            </li>
+                    </ul>
                     
                 </fieldset>
                 <button type="button" class="cs_cancel">Cancel</button>
-                <button type="button" class="cs_confirm">confirm</button>
+                <button type="submit" class="cs_confirm">confirm</button>
             </form>
         </section>
     </main>

@@ -13,12 +13,16 @@ $corner : (
     round : 10px
 );
 
-// input design
+// input design - map-get($input, bg);
 $input : (
     height : 30px,
     bg : black,
     border : 1px solid red,
     radius : 30px
+);
+
+$form : (
+    required : blue,
 );
 
 $text : #fff, #a5a5a5;

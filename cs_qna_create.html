@@ -87,36 +87,56 @@
         </section>
     
         <section class="cs_contents">
-            <form method="post">
+            <form name= "cs_form">
                 <fieldset>
                     <legend>폼</legend>
-                    <div class="cs_form">
-                        <label>
-                            <div class="name_line line">
-                                <p>이름:</p> <input type="text" name="cs_name" required>
-                            </div>
+                    <ul class="cs_form">
+                            <li>
+                                <label>
+                                    <span>이름:</span> <input type="text" name="cs_name" required>
+                                </label>
+                            </li>
                             
-                            <div class="email_line line">
-                                <p>email:</p>
-                                <input type="email" name="cs_email" required>
-                            </div>
+                            <li>
+                                 
+                                <label for="qna_email" class="field_title">email address</label>
+                               
+                                <div class="contents">
+                                    <input type="email" id="qna_email" name="cs_email" required>
+                                </div>  
+                            </li>
+                            <li>
+                                <strong class="field_title required"> 
+                                    Device
+                                </strong>
+                                <div class="contents chk-list">
+                                    <label>
+                                        <input type="checkbox" name="cs_service">
+                                        <span> LIVe</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_service">
+                                        <span> LIVe</span>
+                                    </label>
+                                </div>  
+                            </li>
 
-                            <div class="content_line line">
-                                <p>Contents: </p>
-                                <textarea></textarea>
-                            </div>
+                            <li>
+                                <label for="qna_contents">Contents: </label>
+                                    <textarea id="qna_contents"></textarea>
+                            </li>
 
-                            <div class="file_line line">
-                                <p>Attached file</p>
-                                <input type="file" name="cs_file">
-                            </div>
-
-                        </label>
-                    </div>
+                            <li>
+                                <label>
+                                    <span>Attached file</span>
+                                    <input type="file" name="cs_file">
+                                </label>
+                            </li>
+                    </ul>
                     
                 </fieldset>
                 <button type="button" class="cs_cancel">Cancel</button>
-                <button type="button" class="cs_confirm">confirm</button>
+                <button type="submit" class="cs_confirm">confirm</button>
             </form>
         </section>
     </main>
