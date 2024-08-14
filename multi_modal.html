@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>::: Multi modal :::</title>
+    <style>
+        .dimm {
+            position:fixed;
+            left:0;right:0;top:0;bottom:0;
+            background-color:rgba(0,0,0,0.7);
+            display:none;
+        }
+
+        .dimm.open {
+            display:block;
+        }
+        .modal {
+            display:none;
+            position:fixed;
+            width:500px;height:400px;
+            background-color:teal;
+            color:#fff;
+            border-radius:20px;
+            padding:30px;
+            left:50%;top:50%;
+            transform:translate(-50%, -50%);
+        }
+
+        .modal.open {
+            display:block;
+        }
+    </style>
+</head>
+<body>
+    <div class="btn-area">
+        <button type="button" class="btn-modal" data-modal="notice">Notice</button>
+        <button type="button" class="btn-modal" data-modal="login">Login</button>
+        <button type="button" class="btn-modal" data-modal="toast">Toast</button>
+    </div>
+    <div class="dimm"></div>
+    <div class="modal a" data-modal="notice">
+       MODAL Notice
+    </div>
+    <div class="modal b" data-modal="login">
+       MODAL Login
+    </div>
+    <div class="modal c" data-modal="toast">
+        MODAL toast
+    </div>
+
+    <script>
+        const modalControl = () => {
+            const btns = document.querySelectorAll('.btn-modal');
+            const modals= document.querySelectorAll('.modal');
+            const dimm = document.querySelector('.dimm');
+           
+            btns.forEach(btn => { 
+                btn.addEventListener('click', openModal)
+            })
+    
+
+            function findModal(selectedModal) {
+                const modalName = selectedModal.dataset.modal;
+                const targetModal = [...modals].filter( it => it.dataset.modal === modalName)[0];
+                if(!targetModal) {
+                    return false;
+                }
+
+                return targetModal;
+            }
+
+            function openModal(e) {
+                const modal = findModal(e.target);
+                modals.forEach(modal => modal.classList.remove('open'));
+                dimm.classList.add('open');
+                modal.classList.add('open')
+                dimm.addEventListener('click', () => {
+                     closeModal(modal)
+                });
+            }
+ 
+           function closeModal(target) {
+            dimm.classList.remove('open')
+            target.classList.remove('open')
+           } 
+        }
+
+        modalControl();
+    </script>
+</body>
+</html>

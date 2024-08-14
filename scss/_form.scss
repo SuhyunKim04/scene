@@ -1,9 +1,7 @@
 .cs_contents{
     .cs_form{
         margin-top: 40px;
-        input{
-            border: 1px solid #fff;
-        }
+        @include border;
         .file_line{
             input{
                 border: hidden;
@@ -12,8 +10,17 @@
         }
 
         li{
-            @include flex($j: flex-start,$g:10px);
+            @include flex($j: flex-start);
             padding-bottom: 20px;
+            color: #a5a5a5;
+            .cs_title{
+                flex-basis: 280px;
+            }
+
+            select{
+                color: #a5a5a5;
+            }
+            
         }
         .content_line{
             display: block;
@@ -37,4 +44,19 @@
     }
 }
 
+
+.required{
+    display:flex;
+    align-items:center; 
+    gap:8px;
+    &:before{
+        content:'';
+        width: 5px;
+        height: 5px;
+        background-color: map-get($form, required);
+        border-radius:50%;
+        display: block;
+        margin-top:-2px;
+    }
+}
 

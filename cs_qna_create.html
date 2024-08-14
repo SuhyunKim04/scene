@@ -82,7 +82,6 @@
         <section class="sub_title qna">
             <div class="inner">
                 <h2>Customer <br>Q&A</h2>
-    
             </div>
         </section>
     
@@ -92,48 +91,168 @@
                     <legend>폼</legend>
                     <ul class="cs_form">
                             <li>
-                                <label>
-                                    <span>이름:</span> <input type="text" name="cs_name" required>
+                                <label for="qna_name" class="cs_title">
+                                    이름
                                 </label>
+
+                                <div class="qna_input">
+                                    <input id="qna_name" type="text" name="cs_name" placeholder="이름을 입력해 주세요.(특수문자 입력 불가)" required>
+                                </div>
                             </li>
                             
                             <li>
-                                 
-                                <label for="qna_email" class="field_title">email address</label>
-                               
-                                <div class="contents">
-                                    <input type="email" id="qna_email" name="cs_email" required>
-                                </div>  
+                                <label for="qna_email" class="cs_title">
+                                    이메일 주소
+                                </label>
+                                <div class="qna_input">
+                                    <input  id="qna_email" type="email" name="cs_email" placeholder="이메일을 입력해 주세요" required>
+                                    <p>위 이메일로 답변을 드리기 때문에, 정확히 입력해 주시길 바랍니다.</p>
+                                </div>
+                                
                             </li>
+
                             <li>
-                                <strong class="field_title required"> 
-                                    Device
+                                <label for="qna_phone" class="cs_title">
+                                    연락처
+                                </label>
+                                <div class="qna_input">
+                                    <input  id="qna_phone" type="email" name="cs_email" placeholder="이메일을 입력해 주세요" required>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="qna_category" class="cs_title">
+                                    질문 구분
+                                </label>
+                                   
+                                <div class="qna_input">
+                                    <select id="qna_category" required>
+                                        <option>설치/작동오류</option>
+                                        <option>결제 /요금 단순 문의</option>
+                                        <option>이용불편 사항</option>
+                                        <option>콘텐츠요청</option>
+                                        <option>회원정보</option>
+                                    </select>
+                                </div>
+                            </li>
+
+                            <li>
+                                <strong class="cs_title required" > 
+                                    서비스구분
                                 </strong>
+
                                 <div class="contents chk-list">
                                     <label>
                                         <input type="checkbox" name="cs_service">
-                                        <span> LIVe</span>
+                                        <span> LIVE</span>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox" name="cs_service">
+                                        <span>VOD</span>
                                     </label>
                                     <label>
                                         <input type="checkbox" name="cs_service">
-                                        <span> LIVe</span>
+                                        <span>영화</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_service">
+                                        <span>타임머신</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_service">
+                                        <span>다운로드</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_service">
+                                        <span>기타</span>
                                     </label>
                                 </div>  
                             </li>
 
                             <li>
-                                <label for="qna_contents">Contents: </label>
+                                <label class="cs_title" for="qna_contents">프로그램 정보</label> 
+                                <div class="qna_input">
                                     <textarea id="qna_contents"></textarea>
+                                </div>
+                                   
                             </li>
 
                             <li>
-                                <label>
-                                    <span>Attached file</span>
-                                    <input type="file" name="cs_file">
-                                </label>
+                                <strong class="cs_title required"> 
+                                    시용환경1 (디바이스)
+                                </strong>
+
+                                <div class="qna_input">
+                                    <label>
+                                        <input type="checkbox" name="cs_device">
+                                        <span> PC web</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_device">
+                                        <span>인드로이드 폰</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_device">
+                                        <span>아이폰</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_device">
+                                        <span>안드로이드 태블릿</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_device">
+                                        <span>아이패드</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_device">
+                                        <span>스마트TV</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" name="cs_device">
+                                        <span>기타</span>
+                                    </label>
+                                </div>  
                             </li>
+
+                            <li>
+                                <label for="qna_os" class="cs_title">사용환경2 (OS, 브라우저)</label>
+                                <div class="qna_input">
+                                    <textarea id="qna_os"></textarea>
+                                </div>
+                            </li>
+
+                            <li>
+                                <label for="qna_title" class="cs_title">
+                                    문의하기
+                                </label>
+                                <div class="qna_input">
+                                    <input id="qna_title" type="text" name="cs_text"  placeholder="문의 제목을 입력해 주세요" required>
+                                    <textarea placeholder="문의 제목을 입력해 주세요"></textarea>
+                                </div>
+                            </li>
+
+                            <li>
+                                <strong class="cs_title">개인정보 수집 이용에 대한 동의</strong>
+                                    <div class="qna_input">
+                                    <p>	수집 항목 : 이름(실명), 이메일주소, 연락처(휴대폰번호 등), [환불 처리 시] 계좌정보(은행명, 계좌번호, 예금주명)</p>
+                                    <p>수집 목적 : 서비스 이용에 따른 고객 문의, 불만처리, 오류 해결 등 민원 처리 및 결과 회신</p>
+                                    <p>보유 및 이용 기간 : <strong>문의처리 후 3년간 보관. 단 환불 처리 시 5년 보관(전자상거래법 제6조)</strong></p>
+                                    <p>※ 개인정보 수집 및 이용 동의를 거부할 권리가 있으며, 본 동의를 거부하실 경우에는 1:1문의가 제한될 수 있습니다.</p>
+                                    <p> 그 밖의 사항은 개인정보 처리방침을 준수합니다.</p>
+
+                                <label>
+                                    <input type="checkbox" name="cs_agree">
+                                    <span>개인정보 수집 및 이용에 대해 동의합니다.</span>
+                                </label>
+                                </div>
+                                
+
+                               
+                            </li>
+                                
+                           
                     </ul>
-                    
                 </fieldset>
                 <button type="button" class="cs_cancel">Cancel</button>
                 <button type="submit" class="cs_confirm">confirm</button>

@@ -172,8 +172,6 @@ const live_modal = () => {
       openDimm();
     })
   })
-
-  
 }
 
 live_modal();
