@@ -12,6 +12,14 @@
             display:none;
         }
 
+        button.btn-close {
+            position:fixed;
+            right:50px;
+            top:200px;
+            font-size:50px;
+            color:#fff;
+        }
+
         .dimm.open {
             display:block;
         }
@@ -38,14 +46,17 @@
         <button type="button" class="btn-modal" data-modal="login">Login</button>
         <button type="button" class="btn-modal" data-modal="toast">Toast</button>
     </div>
-    <div class="dimm"></div>
+    <div class="dimm btn-close"></div>
     <div class="modal a" data-modal="notice">
+        <button type="button" class="btn-close">✖︎</button>
        MODAL Notice
     </div>
     <div class="modal b" data-modal="login">
+        <button type="button" class="btn-close">✖︎</button>
        MODAL Login
     </div>
     <div class="modal c" data-modal="toast">
+        <button type="button" class="btn-close">✖︎</button>
         MODAL toast
     </div>
 
@@ -54,11 +65,13 @@
             const btns = document.querySelectorAll('.btn-modal');
             const modals= document.querySelectorAll('.modal');
             const dimm = document.querySelector('.dimm');
-           
+            const btnClose = document.querySelectorAll('.btn-close')
             btns.forEach(btn => { 
                 btn.addEventListener('click', openModal)
             })
     
+ 
+
 
             function findModal(selectedModal) {
                 const modalName = selectedModal.dataset.modal;
@@ -75,14 +88,23 @@
                 modals.forEach(modal => modal.classList.remove('open'));
                 dimm.classList.add('open');
                 modal.classList.add('open')
-                dimm.addEventListener('click', () => {
-                     closeModal(modal)
-                });
             }
+            
+            // dimm.addEventListener('click', () => {
+            //      closeModal()
+            // });
+            btnClose.forEach( btn => {
+
+                btn.addEventListener('click', () => {
+                     closeModal()
+                });
+            });
+
  
-           function closeModal(target) {
+           function closeModal() {
             dimm.classList.remove('open')
-            target.classList.remove('open')
+            //target.classList.remove('open')
+            modals.forEach(modal => modal.classList.remove('open'));
            } 
         }
 

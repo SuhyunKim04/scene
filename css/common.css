@@ -649,28 +649,43 @@ video {
   margin-top: 40px;
   border-top: 1px solid #2f2f2f;
 }
-.cs_contents .cs_form .file_line input {
-  border: hidden;
-}
 .cs_contents .cs_form li {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  padding-bottom: 20px;
+  padding-bottom: 36px;
   color: #a5a5a5;
+  font-size: 16px;
+  font-weight: 600;
 }
 .cs_contents .cs_form li .cs_title {
   flex-basis: 280px;
 }
+.cs_contents .cs_form li .qna_input {
+  width: 435px;
+  background-color: #252525;
+  border-radius: 6px;
+}
+.cs_contents .cs_form li .qna_input input {
+  font-size: 16px;
+  padding-left: 20px;
+  color: #a5a5a5;
+  width: 100%;
+}
+.cs_contents .cs_form li .qna_input p {
+  font-size: 14px;
+  color: #717171;
+  margin-top: 20px;
+}
 .cs_contents .cs_form li select {
   color: #a5a5a5;
 }
-.cs_contents .cs_form .content_line {
-  display: block;
-}
-.cs_contents .cs_form .content_line textarea {
+.cs_contents .cs_form textarea {
   width: 100%;
   height: 160px;
+  background-color: #252525;
+  resize: none;
+  color: #fff;
 }
 .cs_contents button {
   padding: 10px;

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* reset */
+        html,body {
+            width:100%;height:100%;
+            overflow-x:hidden;
+        }
+        * {
+            margin:0; padding:0; box-sizing:border-box;
+        }
+
+        ul {
+            list-style:none;
+        }
+
+        .blind {
+            overflow: hidden;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1px;
+            height: 1px;
+            font-size: 0;
+            text-indent: -9999px;
+            white-space: nowrap;
+        }
+        button {
+            border:0;
+            background-color:transparent;
+            cursor:pointer;
+        }
+
+        a {
+            text-decoration:none;
+            color:inherit;
+            transition:0.5s;
+        }
+
+        /* init */
+        :root {
+            --light-cover : rgba(0,0,0, 0.5);
+            --light-text:#fff;
+            --hover : gold;
+            --dark-cover: rgba(27, 38, 115, 0.569);
+            --dark-text : #7eaded;
+            --dark-gradient : radial-gradient(circle, rgba(70,145,252,0) 0%, rgba(93,63,251,0.727328431372549) 59%, rgba(16,22,102,1) 100%);
+        }
+   
+        /* layout */
+        .all-container {
+            color:var(--light-text);
+        }
+        .video_container {
+            position:absolute;
+            left:0;top:0;
+            width:100%;
+            height:100vh;
+            z-index:-1;
+        }
+
+        .video_container:after {
+            content:'';
+            position:absolute;
+            left:0;right:0;bottom:0;top:0;
+            background-color:var(--light-cover);
+        }
+        .video_container video {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            min-height: 100vh;
+            transform: translateX(-50%);
+            object-fit: cover;
+            object-position: center top;
+        }
+
+        .page_header {  
+            padding:2rem 2.5rem;
+        }
+
+        .page_header .inner {
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        .page_header .gnb > ul {
+            displaY:flex; 
+            gap:30px;
+        }
+
+        .page_header .gnb a:hover {
+            color:var(--hover);
+        }
+        .svg-icon {
+            width:24px;
+            height:24px;   
+        }
+ 
+
+        .svg-icon .moon {
+            fill:#fff; 
+            transition:0.5s; 
+        }
+
+        .all-container .svg-icon:hover .moon {
+            fill:var(--hover);
+        }
+
+        /* slogan area */
+        .slogan-container {  
+            font-family:sans-serif;
+            text-align:center;
+            max-width:1200px;
+            padding:0 2.5rem;
+            width:100%; 
+            position:absolute;
+            left:50%;top:50%;
+            transform:translate(-50%,-60%);
+        }
+
+        .slogan-container h2 {
+            font-size:4rem;
+            margin-bottom:4rem;
+            position:relative;
+        }
+
+        /*
+
+            h1 {
+                a {
+                    color:red;
+                }
+
+                &:after {
+                    content:'haha';
+                }
+            }
+
+            h1 {
+                .link {
+                    color:red;
+                }
+            }
+        */
+        
+        .star {
+            width:40px; height:39px;
+            
+            .path1 {
+                fill:gold;
+            }
+
+            
+        }
+
+        .slogan-container h2:after {
+            content:'';
+            position:absolute;
+            left:50%;bottom:-2rem;
+            width:30px;height:1px;
+            background-color:#fff; 
+        }
+
+        .all-container.dark {
+            color:var(--dark-text);
+        }
+
+        .dark .video_container:after { 
+            /* background-color:var(--dark-cover); */
+            background-image:var(--dark-gradient);
+        }
+
+        .dark .svg-icon .moon{
+            fill:var(--dark-text);
+        }
+
+        .dark .slogan-container h2:after {
+            background-color:var(--dark-text);
+        }
+        .ico-scroll {
+            position:fixed;
+            left:50%;
+            bottom:3rem;
+            transform:translateX(-50%);
+            width:40px;
+            animation:pingpong 0.6s ease-out infinite alternate both;
+            opacity:0.5;
+        }
+
+        @keyframes pingpong {
+            0% { transform:translateY(0)}
+            100% { transform:translateY(-15px)}
+        }
+    </style>
+</head>
+<body>
+    <div class="all-container">
+        <div class="video_container">
+            <video src="./media/nature.mp4" playsinline muted loop preload autoplay></video>
+        </div> 
+        
+        <header class="page_header">
+            <div class="inner">
+                <h1><a href="#">NATURE</a></h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">TEAM</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Media</a></li>
+                        <li><a href="#">Story</a></li>
+                    </ul>
+                </nav>
+                <div class="utils">
+                    <button type="button" class="btn-mode" title="Change mode">
+                        <span class="blind">Turn on Dark mode</span>
+                        <svg class="svg-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path d="M0 0h24v24H0z"/>
+                                <path d="M2 22h20V2H2z"/>
+                                <path d="M8.716 4.342c-.033.326-.05.657-.05.991 0 5.523 4.478 10 10 10 .335 0 .666-.016.992-.049-1.277 2.967-4.229 5.05-7.658 5.05-4.595 0-8.333-3.739-8.333-8.334 0-3.43 2.082-6.381 5.049-7.658zm.38-1.913C4.989 3.673 2 7.487 2 12c0 5.523 4.477 10 10 10 4.513 0 8.327-2.99 9.571-7.096l-1.378-1.378a8.353 8.353 0 0 1-1.526.14c-4.595 0-8.334-3.738-8.334-8.333 0-.52.049-1.03.14-1.526L9.097 2.43z" class="moon"/>
+                            </g>
+                        </svg> 
+                    </button>
+
+                    <svg class="star" viewBox="0 0 40 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20 0L24.4903 13.4742H39.0211L27.2654 21.8017L31.7557 35.2758L20 26.9483L8.2443 35.2758L12.7346 21.8017L0.97887 13.4742H15.5097L20 0Z" class="path1"/>
+                        </svg>
+                        
+                        
+                </div>
+            </div>
+        </header>
+    
+        <article class="slogan-container">
+            <h2>Discover the Beauty <br>and Serenity of Nature</h2>
+            <p>
+                “Protecting Nature, Preserving Life. Our well-being is intertwined with the health of our planet. Every action to save nature is a step towards saving ourselves. Join us in the mission to nurture and protect our environment. Together, we can ensure a sustainable future for all.”
+            </p>
+        </article>
+
+        <img src="./images/ico_arrow_down.svg" alt="Scroll down" class="ico-scroll">
+    </div> 
+
+    <script>
+        const btn = document.querySelector('.btn-mode');
+        const all = document.querySelector('.all-container') 
+        btn.addEventListener('click', (e)=> {
+            all.classList.toggle('dark')
+        })
+    </script>
+</body>
+</html>
