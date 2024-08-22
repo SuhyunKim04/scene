@@ -27,9 +27,6 @@
             border-radius: 50%;
         }
     }
-
-    
-   
 }
 
 .mypage{
@@ -51,26 +48,14 @@
 .watched{
    .video_list{
     color: nth($text,2);
-    @include flex($j:flex-start, $g: 12px);
-    flex-wrap: wrap;
-        .my_video{
-            width:20vw;
-        }
-   }
-}
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
 
-.likes{
-    margin-top: 30px;
-    .likes_box{
-        display: flex;
-        gap:20px;
-
-        li{
-            width:20vw; 
-            flex-shrink:0;
-            height:40vh;
-            overflow:hidden;
-            border-radius: map-get($corner, round);
-        }
+    .video_box{
+        height: 170px;
+        border-radius: 12px;
+        overflow: hidden;
     }
+   }
 }

@@ -151,6 +151,7 @@ body {
 video {
   width: 100%;
   height: 100%;
+  object-fit: cover;
 }
 
 .channel {
@@ -188,6 +189,38 @@ video {
   width: 200px;
   height: 140px;
   border-radius: 10px;
+}
+
+.module-poster {
+  margin-top: 20px;
+}
+.module-poster .title {
+  font-family: "Jersey 15", sans-serif;
+  font-size: 26px;
+}
+.module-poster .list {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+.module-poster .list li {
+  flex-basis: 260px;
+  flex-shrink: 0;
+  height: 330px;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.module-poster .list li:hover img {
+  transform: scale(1.1);
+}
+.module-poster .list li a {
+  display: block;
+}
+.module-poster .list li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s;
 }
 
 .dimm {
@@ -284,7 +317,7 @@ video {
 }
 
 .main_video {
-  position: absolute;
+  position: relative;
   width: 100%;
   height: 100vh;
   left: 0;
@@ -627,29 +660,14 @@ video {
 
 .watched .video_list {
   color: #a5a5a5;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-.watched .video_list .my_video {
-  width: 20vw;
-}
-
-.likes {
-  margin-top: 30px;
-}
-.likes .likes_box {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
-.likes .likes_box li {
-  width: 20vw;
-  flex-shrink: 0;
-  height: 40vh;
+.watched .video_list .video_box {
+  height: 170px;
+  border-radius: 12px;
   overflow: hidden;
-  border-radius: 10px;
 }
 
 .icon {
