@@ -236,6 +236,9 @@ video {
   font-size: 16px;
   font-weight: 500;
 }
+.page_header .gnb a:hover {
+  color: gold;
+}
 .page_header .gnb ul {
   display: flex;
   column-gap: 40px;
@@ -282,9 +285,11 @@ video {
 
 .main_video {
   position: absolute;
-  width: 100vw;
-  height: 80vh;
-  background-color: #234160;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: -1;
 }
 .main_video video {
   position: absolute;
@@ -292,8 +297,13 @@ video {
   height: 100%;
   top: 0;
   left: 0;
+  object-fit: cover;
+  object-position: center top;
 }
 
+.slide_main {
+  position: relative;
+}
 .slide_main h2 {
   font-family: "Jersey 15", sans-serif;
   font-size: 26px;
@@ -307,7 +317,6 @@ video {
   flex-basis: 260px;
   flex-shrink: 0;
   height: 330px;
-  outline: 1px solid red;
   overflow: hidden;
   border-radius: 10px;
 }
@@ -572,13 +581,21 @@ video {
 .sub_title .inner {
   padding: 40px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
-.sub_title .inner .wrap {
+.sub_title .inner ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.sub_title .inner ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.sub_title .inner ul li a {
+  display: block;
 }
 .sub_title .profile_box {
   display: flex;

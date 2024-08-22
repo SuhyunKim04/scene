@@ -39,6 +39,11 @@
         margin-left: 60px;
         font-size: 16px;
         font-weight: 500;
+        a{
+            &:hover{
+                color: gold;
+            }
+        }
         ul{
             display: flex;
             column-gap: 40px;

@@ -3,11 +3,17 @@
     margin-top: 80px;
     .inner{
         padding: 40px 0;
-        @include flex($j: center);
+        @include flex;
         @extend %main;
 
-        .wrap{
+        ul{
             @include flex;
+            li{
+                @include flex;
+                a{
+                    display: block;
+                }
+            }
         }
     }
 
