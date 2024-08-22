@@ -281,7 +281,7 @@ video {
 }
 
 .main_video {
-  position: relative;
+  position: absolute;
   width: 100vw;
   height: 80vh;
   background-color: #234160;
