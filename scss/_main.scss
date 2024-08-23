@@ -3,7 +3,7 @@
     margin-top: 80px;
     .inner{
         padding: 40px 0;
-        @include flex;
+        @include flex($j:center);
         @extend %main;
 
         ul{

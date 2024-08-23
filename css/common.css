@@ -614,7 +614,7 @@ video {
 .sub_title .inner {
   padding: 40px 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .sub_title .inner ul {
