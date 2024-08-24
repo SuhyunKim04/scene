@@ -15,6 +15,7 @@
 </head>
 <body>
     <!-- 등록완료 -->
+    <div class="dimm"></div>
     <header class="page_header">
         <div class="inner">
             <h1>
@@ -22,25 +23,34 @@
                     Scene
                 </a>
             </h1>
-    
-            <nav class="gnb">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="./live.html">Live</a>
-                    </li>
-                    <li>
-                        <a href="./mypage.html">My</a>
-                    </li>
-                    <li>
-                        <a href="cs_faq.html">FAQ</a>
-                    </li>
-                    <li>
-                        <a href="./cs_qna.html">QNA</a>
-                    </li>
-                </ul>
+            <div class="white">
+                <nav class="gnb">
+                    <ul>
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./live.html">Live</a>
+                        </li>
+                        <li>
+                            <a href="./mypage.html">My</a>
+                        </li>
+                        <li>
+                            <a href="cs_faq.html">FAQ</a>
+                        </li>
+                        <li>
+                            <a href="./cs_qna.html">QNA</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <nav class="btn_ham">
+                <a class="menu" href="#">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </a>
             </nav>
             
             <div class="search_box">
@@ -76,11 +86,12 @@
                 </ul>
             </div>
         </div>
+       
     </header>
 
     <main class="page_main base_width">
-        <section class="sub_title qna">
-            <div class="inner">
+        <section class="sub_title">
+            <div class="qna">
                 <h2>Customer <br>Q&A</h2>
             </div>
         </section>
@@ -116,7 +127,7 @@
                                     연락처
                                 </label>
                                 <div class="qna_input">
-                                    <input  id="qna_phone" type="email" name="cs_email" placeholder="이메일을 입력해 주세요" required>
+                                    <input  id="qna_phone" type="email" name="cs_email" placeholder="연락처를 입력해주세요" required>
                                 </div>
                             </li>
 

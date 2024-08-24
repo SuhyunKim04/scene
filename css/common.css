@@ -611,10 +611,16 @@ video {
   background-color: #252525;
   margin-top: 80px;
 }
+.sub_title .qna {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
 .sub_title .inner {
   padding: 40px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 .sub_title .inner ul {
@@ -693,8 +699,14 @@ video {
   font-size: 16px;
   font-weight: 600;
 }
+.cs_contents .cs_form li:first-child {
+  margin-top: 20px;
+}
 .cs_contents .cs_form li .cs_title {
   flex-basis: 280px;
+}
+.cs_contents .cs_form li .contents input[type=checkbox] {
+  display: none;
 }
 .cs_contents .cs_form li .qna_input {
   width: 435px;

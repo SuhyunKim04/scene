@@ -1,9 +1,14 @@
 .sub_title{
     background-color: map-get($back, background-color );
     margin-top: 80px;
+
+    .qna{
+        @include flex($j: center);
+        padding: 40px 0;
+    }
     .inner{
         padding: 40px 0;
-        @include flex($j:center);
+        @include flex;
         @extend %main;
 
         ul{
