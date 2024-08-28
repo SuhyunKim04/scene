@@ -628,13 +628,10 @@ video {
   justify-content: space-between;
   align-items: center;
 }
-.sub_title .inner ul li {
+.sub_title .inner ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.sub_title .inner ul li a {
-  display: block;
 }
 .sub_title .profile_box {
   display: flex;

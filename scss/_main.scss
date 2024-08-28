@@ -14,9 +14,8 @@
         ul{
             @include flex;
             li{
-                @include flex;
                 a{
-                    display: block;
+                    @include flex;
                 }
             }
         }
