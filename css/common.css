@@ -673,6 +673,34 @@ video {
   overflow: hidden;
 }
 
+.video_box {
+  padding: 0 40px;
+}
+.video_box .video_channel {
+  position: relative;
+  left: 0;
+  top: 0;
+  margin-top: 80px;
+}
+.video_box .video_title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.video_box .video_title h2 {
+  font-size: 30px;
+}
+.video_box .video_title strong {
+  color: #a5a5a5;
+  font-weight: 400;
+}
+.video_box .video_title button {
+  background-color: blue;
+  padding: 12px 28px;
+  border-radius: 30px;
+}
+
 .icon {
   width: 18px;
   height: 18px;

@@ -63,3 +63,37 @@
     }
    }
 }
+
+
+//live_channel//
+.video_box{
+    padding: 0 40px;
+
+    .video_channel{
+        position: relative;
+        left:0;top:0;
+        margin-top: 80px;
+    }
+
+    .video_title{
+        @include flex($a: flex-start);
+        margin-top: 20px;
+
+        h2{
+            font-size: 30px;
+        }
+
+        strong{
+            color: nth($text,2);
+            font-weight: 400;
+        }
+
+        button{
+            background-color: blue;
+            padding: 12px 28px;
+            border-radius: 30px;
+        }
+    }
+}
+
+
