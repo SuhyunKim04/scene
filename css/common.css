@@ -704,17 +704,36 @@ video {
   gap: 24px;
   margin: 20px 0;
 }
+.live_channel_box .three_icons li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.channel_table h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
 .channel_table ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: #a5a5a5;
+}
+.channel_table ul button {
+  color: #fff;
+  border: 1px solid #fff;
+  width: 80px;
+  padding: 7px 0;
+  border-radius: 20px;
+  margin-left: 20px;
 }
 .channel_table ul li {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px solid #a5a5a5;
+  border: 1px solid #2f2f2f;
+  height: 80px;
 }
 
 .icon {

@@ -97,16 +97,34 @@
     .three_icons{
         @include flex($j:flex-start,$g: 24px);
         margin: 20px 0;
+
+        li{
+            @include flex;
+        }
     }
 }
 
 .channel_table{
+    h3{
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
     ul{
         @include flex;
+        color: nth($text,2);
+        button{
+            color: #fff;
+            border: 1px solid #fff;
+            width: 80px;
+            padding: 7px 0;
+            border-radius: 20px;
+            margin-left: 20px;
+        }
         
         li{
             @include flex;
-            border: 1px solid #a5a5a5;
+            border: 1px solid #2f2f2f;
+            height: 80px;
         }
     }
 }
