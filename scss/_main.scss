@@ -66,8 +66,7 @@
 
 
 //live_channel//
-.video_box{
-    padding: 0 40px;
+.live_channel_box{
 
     .video_channel{
         position: relative;
@@ -92,6 +91,22 @@
             background-color: blue;
             padding: 12px 28px;
             border-radius: 30px;
+        }
+    }
+
+    .three_icons{
+        @include flex($j:flex-start,$g: 24px);
+        margin: 20px 0;
+    }
+}
+
+.channel_table{
+    ul{
+        @include flex;
+        
+        li{
+            @include flex;
+            border: 1px solid #a5a5a5;
         }
     }
 }
