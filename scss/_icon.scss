@@ -2,9 +2,65 @@
     width: 18px;
     height: 18px;
     display: block;
-    background-image:url($icon + 'clock.svg');
+   
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto 18px;
+
+
+    /*
+    &.refresh {
+        background-image:url($icon + 'refresh.svg');
+    }
+    */
+}
+
+
+.web-icon { 
+    &:before {
+        // content:'\f021';
+        font-family:'fontAwesome';
+        font-size:20px;
+    }
 }
  
+ 
+.icon-test .web-icon {
+    &:before {
+        content:'';
+        font-family:'fontAwesome';
+    }
+    
+    &[data-code="f001"] { 
+        &:before {
+            content: '\f001';
+        }
+    }
+    &[data-code="f005"] {
+        &:before {
+            content: '\f005';
+        }
+    }
+}
+
+
+
+
+
+.web-icon-test {
+    $icons : \f001, \f005, \f006;  
+    background-color:Red;
+    li {
+        &:before {
+            font-family:'fontAwesome';
+        }
+
+        @for $i from 1 through length($icons) {
+            &:nth-child(#{$i}){
+                &:before{
+                    content: quote(nth($icons,$i))
+                }
+            }
+        }
+    }
+}

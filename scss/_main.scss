@@ -66,17 +66,25 @@
 
 
 //live_channel//
+.live_main {
+    .inner {
+        @extend %main;
+    }
+}
 .live_channel_box{
-
-    .video_channel{
-        position: relative;
-        left:0;top:0;
+    
+    .video_wrapper{  
         margin-top: 80px;
+        background-color: #000;
+
+        .module-video { 
+            height: 80vh;
+        }
     }
 
     .video_title{
         @include flex($a: flex-start);
-        margin-top: 20px;
+        margin-top: 40px;
 
         h2{
             font-size: 30px;
@@ -108,6 +116,7 @@
     h3{
         margin-top: 30px;
         margin-bottom: 20px;
+        font-size: 28px;
     }
     ul{
         @include flex;
@@ -129,4 +138,13 @@
     }
 }
 
+.all_channel{
+    button{
+        font-size: 20px;
+        margin: 40px 0;
+        &:first-child{
+            margin-right: 20px;
+        }
+    }
+}
 

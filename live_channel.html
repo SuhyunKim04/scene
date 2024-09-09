@@ -12,7 +12,9 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
         <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     </head>
 <body>
     <div class="dimm"></div>
@@ -89,246 +91,279 @@
         </div>
     </header>
 
-<main class="page_main">
+
+    
+<main class="live_main">
     <section class="live_channel_box">
-        <div class="video_channel">
-            <video src="./video/channel.mp4" muted preload></video>
-        </div>
-        <div></div>
-
-        <div class="video_title">
-            <div>
-                <h2>MBC 하이킥</h2>
-                <strong>06:00 ~ 07:15</strong>
-            </div>
-            
-            <button type="button">로그인(무료시청)</button>
-            
-        </div>
-
-        <ul class="three_icons">
-            <li>
-                <button>
-                    <i class="icon heart"></i>
-                    <strong>관심</strong>
-                </button>
-            </li>
-            <li>
-                <button>
-                    <i class="icon share"></i>
-                    <strong>공유</strong>
-                </button>
-            </li>
-            <li>
-                <button>
-                    <i class="icon calendar_clock"></i>
-                    <strong>전체 편성표</strong>
-                </button>
-            </li>
-        </ul>
-    </section>
-
-    <section class="channel_table">
-        <h3>채널 편성표</h3>
-        <ul>
-            <li>
-                <div>
-                    <p>[지붕 하이킥] [32회]</p>
-                    <strong>20:06 ~ 20:30</strong>
-                </div>
-                <button type="button">
-                    다시보기
-                </button>
-
-            </li>
-
-            <li>
-                <div>
-                    <p>[무한도전] [202회]</p>
-                    <strong>20:06 ~ 20:30</strong>
-                </div>
-                <button type="button">
-                    다시보기
-                </button>
-
-            </li>
-
-            <li>
-                <div>
-                    <p>[나 혼자 산다] [120회]</p>
-                    <strong>20:06 ~ 20:30</strong>
-                </div>
-                <button type="button">
-                    다시보기
-                </button>
-
-            </li>
-
-            <li>
-                <div>
-                    <p>[미실] [59회]</p>
-                    <strong>20:06 ~ 20:30</strong>
-                </div>
-                <button type="button">
-                    다시보기
-                </button>
-
-            </li>
-        </ul>
-    </section>
-
-    <section class="all_channel">
-        <button type="button">전체 채널</button>
-        <div class="relative flex">
-            <div>
-                <!-- video list - row 2-->
-                <div class="gap-6 mx-4 md:flex">
-                    <div class="md:w-1/4 live_tv">
-                        <div class="wrap-video">
-                            <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
-                                <source 
-                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <span class="pt-4 grid grid-cols-6 gap-4">
-                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
-                                YTN
-                            </span>
-                        </span>
-                        <span class="block text-slate-400 text-xs uppercase font-mono">
-                                뉴스 
-                        </span>
-                    </div>
-                    <div class="md:w-1/4 live_tv">
-                        <div class="wrap-video">
-                            <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
-                                <source 
-                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <span class="pt-4 grid grid-cols-6 gap-4">
-                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
-                                SBS
-                            </span>
-                        </span>
-                        <span class="block text-slate-400 text-xs uppercase font-mono">
-                                런닝맨 
-                        </span>
-                    </div>
-                    <div class="md:w-1/4 live_tv">
-                        <div class="wrap-video">
-                            <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
-                                <source 
-                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <span class="pt-4 grid grid-cols-6 gap-4">
-                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
-                                tvN
-                            </span>
-                        </span>
-                        <span class="block text-slate-400 text-xs uppercase font-mono">
-                                대탈출
-                        </span>
-                    </div>
-                    <div class="md:w-1/4 live_tv">
-                        <div class="wrap-video">
-                            <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
-                                <source 
-                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <span class="pt-4 grid grid-cols-6 gap-4">
-                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
-                                tvN
-                            </span>
-                        </span>
-                        <span class="block text-slate-400 text-xs uppercase font-mono">
-                                미스터 션샤인
-                        </span>
-                    </div>
-                    
-                </div>
-
-                <div class="gap-6 mx-4 md:flex mt-3">
-                    <div class="md:w-1/4">
-                        <div class="wrap-video">
-                            <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
-                                <source 
-                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <span class="pt-4 grid grid-cols-6 gap-4">
-                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
-                                YTN
-                            </span>
-                        </span>
-                        <span class="block text-slate-400 text-xs uppercase font-mono">
-                                뉴스 
-                        </span>
-                    </div>
-                    <div class="md:w-1/4">
-                        <div class="wrap-video">
-                            <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
-                                <source 
-                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <span class="pt-4 grid grid-cols-6 gap-4">
-                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
-                                MBC
-                            </span>
-                        </span>
-                        <span class="block text-slate-400 text-xs uppercase font-mono">
-                                무한도전 
-                        </span>
-                    </div>
-                    <div class="md:w-1/4">
-                        <div class="wrap-video">
-                            <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
-                                <source 
-                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <span class="pt-4 grid grid-cols-6 gap-4">
-                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
-                                tvN
-                            </span>
-                        </span>
-                        <span class="block text-slate-400 text-xs uppercase font-mono">
-                                호텔델루나
-                        </span>
-                    </div>
-                    <div class="md:w-1/4">
-                        <div class="wrap-video">
-                            <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
-                                <source 
-                                    src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
-                                    type="video/mp4">
-                            </video>
-                        </div>
-                        <span class="pt-4 grid grid-cols-6 gap-4">
-                            <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
-                                KBS
-                            </span>
-                        </span>
-                        <span class="block text-slate-400 text-xs uppercase font-mono">
-                                동백꽃 필 무렵
-                        </span>
-                    </div>
-                    
-                </div>
+        <div class="video_wrapper">
+            <div class="module-video inner">
+                <video src="./video/channel.mp4" muted preload controls></video>
             </div>
         </div>
+
+        <div class="inner">
+            <div class="video_title">
+                <div>
+                    <h2>MBC 하이킥</h2>
+                    <strong>06:00 ~ 07:15</strong>
+                </div>
+                
+                <button type="button">로그인(무료시청)</button>
+                
+            </div>
+    
+            <ul class="three_icons">
+                <li>
+                    <button>
+                        <i class="icon heart"></i>
+                        <strong>관심</strong>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="icon share"></i>
+                        <strong>공유</strong>
+                    </button>
+                </li>
+                <li>
+                    <button>
+                        <i class="icon calendar_clock"></i>
+                        <strong>전체 편성표</strong>
+                    </button>
+                </li>
+            </ul>
+        </div>
+
     </section>
+    <div class="inner">
+        <section class="channel_table">
+            <h3>채널 편성표</h3>
+            <ul>
+                <li>
+                    <div>
+                        <p>[지붕 하이킥] [32회]</p>
+                        <strong>20:06 ~ 20:30</strong>
+                    </div>
+                    <button type="button">
+                        다시보기
+                    </button>
+
+                </li>
+
+                <li>
+                    <div>
+                        <p>[무한도전] [202회]</p>
+                        <strong>20:06 ~ 20:30</strong>
+                    </div>
+                    <button type="button">
+                        다시보기
+                    </button>
+
+                </li>
+
+                <li>
+                    <div>
+                        <p>[나 혼자 산다] [120회]</p>
+                        <strong>20:06 ~ 20:30</strong>
+                    </div>
+                    <button type="button">
+                        다시보기
+                    </button>
+
+                </li>
+
+                <li>
+                    <div>
+                        <p>[미실] [59회]</p>
+                        <strong>20:06 ~ 20:30</strong>
+                    </div>
+                    <button type="button">
+                        다시보기
+                    </button>
+
+                </li>
+            </ul>
+        </section>
+
+        <section class="all_channel">
+            <div class="channel_box_btn">
+                <button type="button">전체 채널</button>
+                <button type="button">추천</button>
+                <button>
+                    <!-- <i class="icon refresh"></i>
+                      -->
+                    <!-- <span class="material-symbols-outlined">
+                        refresh
+                        </span> -->
+                    
+                    <i class="web-icon refresh"></i>
+                    <strong>새로고침</strong>
+                </button>
+            </div>
+            
+        
+            <div class="relative flex">
+                <div>
+                    <!-- video list - row 2-->
+                    <div class="gap-6 mx-4 md:flex">
+                        <div class="md:w-1/4 live_tv">
+                            <div class="wrap-video">
+                                <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
+                                    <source 
+                                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="pt-4 grid grid-cols-6 gap-4">
+                                <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                    YTN
+                                </span>
+                            </span>
+                            <span class="block text-slate-400 text-xs uppercase font-mono">
+                                    뉴스 
+                            </span>
+                        </div>
+                        <div class="md:w-1/4 live_tv">
+                            <div class="wrap-video">
+                                <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
+                                    <source 
+                                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="pt-4 grid grid-cols-6 gap-4">
+                                <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                    SBS
+                                </span>
+                            </span>
+                            <span class="block text-slate-400 text-xs uppercase font-mono">
+                                    런닝맨 
+                            </span>
+                        </div>
+                        <div class="md:w-1/4 live_tv">
+                            <div class="wrap-video">
+                                <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
+                                    <source 
+                                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="pt-4 grid grid-cols-6 gap-4">
+                                <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                    tvN
+                                </span>
+                            </span>
+                            <span class="block text-slate-400 text-xs uppercase font-mono">
+                                    대탈출
+                            </span>
+                        </div>
+                        <div class="md:w-1/4 live_tv">
+                            <div class="wrap-video">
+                                <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
+                                    <source 
+                                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="pt-4 grid grid-cols-6 gap-4">
+                                <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                    tvN
+                                </span>
+                            </span>
+                            <span class="block text-slate-400 text-xs uppercase font-mono">
+                                    미스터 션샤인
+                            </span>
+                        </div>
+                        
+                    </div>
+
+                    <div class="gap-6 mx-4 md:flex mt-3">
+                        <div class="md:w-1/4">
+                            <div class="wrap-video">
+                                <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
+                                    <source 
+                                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="pt-4 grid grid-cols-6 gap-4">
+                                <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                    YTN
+                                </span>
+                            </span>
+                            <span class="block text-slate-400 text-xs uppercase font-mono">
+                                    뉴스 
+                            </span>
+                        </div>
+                        <div class="md:w-1/4">
+                            <div class="wrap-video">
+                                <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
+                                    <source 
+                                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="pt-4 grid grid-cols-6 gap-4">
+                                <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                    MBC
+                                </span>
+                            </span>
+                            <span class="block text-slate-400 text-xs uppercase font-mono">
+                                    무한도전 
+                            </span>
+                        </div>
+                        <div class="md:w-1/4">
+                            <div class="wrap-video">
+                                <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
+                                    <source 
+                                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="pt-4 grid grid-cols-6 gap-4">
+                                <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                    tvN
+                                </span>
+                            </span>
+                            <span class="block text-slate-400 text-xs uppercase font-mono">
+                                    호텔델루나
+                            </span>
+                        </div>
+                        <div class="md:w-1/4">
+                            <div class="wrap-video">
+                                <video class="object-cover h-40 w-full bg-black rounded-2xl" loop="" >
+                                    <source 
+                                        src="https://assets-global.website-files.com/62d57921074baa1ce7275405/6363f65c00474db467bed81b_Screen%20Recording%202022-11-03%20at%2011018%20PM-transcode.mp4"
+                                        type="video/mp4">
+                                </video>
+                            </div>
+                            <span class="pt-4 grid grid-cols-6 gap-4">
+                                <span class="col-start-1 col-end-3 font-bold text-lg text-white uppercase font-mono">
+                                    KBS
+                                </span>
+                            </span>
+                            <span class="block text-slate-400 text-xs uppercase font-mono">
+                                    동백꽃 필 무렵
+                            </span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 </main>
+ 
+<div class="icon-test">
+    <p class="web-icon" data-code="f001">icon</p>
+    <p>icon</p>
+    <p class="web-icon" data-code="f005">icon</p>
+    <p>icon</p>
+    <p>icon</p>
+    <p>icon</p>
+    <p>icon</p>
+</div>
+
 <footer>
     <div class="page_main">
         <ul class="footer_common">
