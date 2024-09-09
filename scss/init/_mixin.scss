@@ -50,3 +50,12 @@
     top:0;bottom:$b;
 }
 
+@mixin code-icon ($icon: null) {
+    &[data-code="#{$icon}"]:before{
+        content: #{'"\\' + $icon + '"'};
+    }
+}
+
+
+
+// "\\ -> "\

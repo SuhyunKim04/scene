@@ -25,23 +25,40 @@
 }
  
  
-.icon-test .web-icon {
-    &:before {
-        content:'';
-        font-family:'fontAwesome';
-    }
-    
-    &[data-code="f001"] { 
-        &:before {
-            content: '\f001';
-        }
-    }
-    &[data-code="f005"] {
-        &:before {
-            content: '\f005';
-        }
+ 
+
+.web-icon {
+    $icons : f021, f001, f004, f017, f274;
+    @each $icon in $icons {
+         @debug $icon;
+         @include code-icon($icon);
     }
 }
+
+
+.attr-test {
+    a[title] {
+        color:red;
+    }
+
+    a[title="naver"] {
+        font-style:italic;
+    }
+
+    a[href^="http"] {
+        font-size:50px;
+    }
+
+    img[src$=svg] {
+        border:10px solid red;
+    } 
+     
+}
+
+
+// .web-icon {
+//     @include code-icon(f005);
+// }
 
 
 
