@@ -12,21 +12,23 @@
         @extend %main;
 
         h2{
-            font-size: 30px;
+            font-size: 26px;
+            font-weight: 600;
         }
 
         ul{
             @include flex;
             li{
+                margin-right:20px;
                 a{
-                    @include flex;
+                    @include flex($g:12px);
                 }
             }
         }
     }
 
     .profile_box{
-        @include flex;
+        @include flex($a:center,$g:20px);
 
         .my_profile{
             background-color: orange;
@@ -47,23 +49,27 @@
     padding: 60px 0;
     margin-bottom: 50px;
 }
-
-.sub_title h2{
-    font-size: 20px;
-    padding-bottom: 20px;
-    text-align: center;
-}
 .watched{
+   h2{
+    font-weight: 600;
+    padding-bottom: 20px;
+   }
    .video_list{
     color: nth($text,2);
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 
+    li{
+        font-weight: 500;
+    }
+
     .video_box{
         height: 170px;
         border-radius: 12px;
         overflow: hidden;
+        margin-bottom:18px;
+
     }
    }
 }

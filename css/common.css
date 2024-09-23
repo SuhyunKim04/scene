@@ -637,22 +637,28 @@ video {
   align-items: center;
 }
 .sub_title .inner h2 {
-  font-size: 30px;
+  font-size: 26px;
+  font-weight: 600;
 }
 .sub_title .inner ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+.sub_title .inner ul li {
+  margin-right: 20px;
+}
 .sub_title .inner ul li a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 12px;
 }
 .sub_title .profile_box {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 }
 .sub_title .profile_box .my_profile {
   background-color: orange;
@@ -671,22 +677,24 @@ video {
   margin-bottom: 50px;
 }
 
-.sub_title h2 {
-  font-size: 20px;
+.watched h2 {
+  font-weight: 600;
   padding-bottom: 20px;
-  text-align: center;
 }
-
 .watched .video_list {
   color: #a5a5a5;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
+.watched .video_list li {
+  font-weight: 500;
+}
 .watched .video_list .video_box {
   height: 170px;
   border-radius: 12px;
   overflow: hidden;
+  margin-bottom: 18px;
 }
 
 .live_channel_box .video_wrapper {
@@ -977,15 +985,15 @@ footer .page_main {
   .slide_main .slide_box li {
     height: 400px;
   }
-}
-footer .page_main {
-  padding: 30px 20px;
-}
-footer .footer_common {
-  display: block;
-}
-footer .footer_common li {
-  padding-bottom: 12px;
+  footer .page_main {
+    padding: 30px 20px;
+  }
+  footer .footer_common {
+    display: block;
+  }
+  footer .footer_common li {
+    padding-bottom: 12px;
+  }
 }
 
 /*# sourceMappingURL=common.css.map */
