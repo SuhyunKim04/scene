@@ -11,6 +11,10 @@
         @include flex;
         @extend %main;
 
+        h2{
+            font-size: 30px;
+        }
+
         ul{
             @include flex;
             li{

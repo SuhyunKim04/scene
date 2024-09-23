@@ -636,6 +636,9 @@ video {
   justify-content: space-between;
   align-items: center;
 }
+.sub_title .inner h2 {
+  font-size: 30px;
+}
 .sub_title .inner ul {
   display: flex;
   justify-content: space-between;
