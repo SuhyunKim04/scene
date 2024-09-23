@@ -1,18 +1,23 @@
 .live_modal{
     @include center;
     background-color:rgb(51, 53, 48);
-    z-index: 1000;
+    z-index: 101;
     height: 600px;
     width: 500px;
     display: none;
+    border-radius: 8px;
 
     &.open{
         display: block;
     }
 
     h3{
-        background-color: blue;
+        background-color: $primary;
         padding: 26px 10px;
+        border-radius: 8px 8px 0 0;
+        font-size: 25px;
+        padding-left: 35px;
+        font-weight: 600;;
     }
 
     .modal_list{
