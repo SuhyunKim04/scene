@@ -174,6 +174,43 @@ const live_modal = () => {
   })
 }
 
+const noticeAutoScroll = () => {
+  const notice = document.getElementById('notice');
+  const list = notice.querySelector('.list ul');
+  console.log(list)
+
+  let timerId;
+  let size = 0;
+  let line= notice.querySelector('.list').offsetHeight;
+  let limit = (list.childElementCount - 1)* line
+
+  const scrollUp = () => {
+
+    if(size >= limit) {
+      size = 0
+    }else{
+      size += line
+    }
+
+    list.style.transform = `translateY(-${size}px)`;
+  }
+
+  const loopPlay = () => {
+    timerId = setInterval(scrollUp, 3000);
+  }
+
+  const loopStop = () => {
+    clearInterval(timerId);
+    console.log('scroll is stoped')
+  }
+
+  loopPlay();
+  notice.addEventListener('mouseenter', loopPlay);
+  notice.addEventListener('mouseleave', loopPlay);
+}
+
+noticeAutoScroll();
+
 live_modal();
 
 viewWhite();

@@ -11,6 +11,23 @@ footer{
         border:1px solid #2f2f2f;
         border-width: 1px 0 0 0;
         padding: 30px 0;
+        .notice{
+            @include flex($j:flex-start);
+            .list{
+                overflow: hidden;
+                height: 26px;
+                margin-left: 12px;
+
+                ul{
+                    transition: 0.4s;
+                }
+            }
+            li{
+                @include flex($j:flex-start);
+                padding-bottom: 12px;
+            }
+            
+        }
     }
 }
 

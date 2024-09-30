@@ -303,10 +303,11 @@ video {
   margin-left: 50px;
 }
 .page_header .search_box .search_bar {
-  border-radius: 20px;
-  height: 26px;
+  border-radius: 12px;
+  height: 36px;
   background-color: #000;
   color: #fff;
+  width: 0;
 }
 .page_header .account-container {
   position: relative;
@@ -932,6 +933,25 @@ footer .page_main {
   border: 1px solid #2f2f2f;
   border-width: 1px 0 0 0;
   padding: 30px 0;
+}
+footer .page_main .notice {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+footer .page_main .notice .list {
+  overflow: hidden;
+  height: 26px;
+  margin-left: 12px;
+}
+footer .page_main .notice .list ul {
+  transition: 0.4s;
+}
+footer .page_main .notice li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-bottom: 12px;
 }
 
 @media all and (max-width: 899px) {
