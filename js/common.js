@@ -137,6 +137,22 @@ const viewWhite = () => {
   })
 }
 
+
+
+const click = () => {
+  const search = document.querySelector('.click_search');
+  const bar = document.querySelector('.search_bar');
+
+  search.addEventListener('click', (e) => {
+    bar.classList.add('open')
+  })
+}
+
+click();
+
+
+
+
 /*
 const new_modal = () => {
   const menus = a;
@@ -201,7 +217,6 @@ const noticeAutoScroll = () => {
 
   const loopStop = () => {
     clearInterval(timerId);
-    console.log('scroll is stoped')
   }
 
   loopPlay();

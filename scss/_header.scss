@@ -62,6 +62,11 @@
             color: #fff;
             width: 0;
             
+            &.open{
+                width: 250px;
+                padding-left: 12px;
+            }
+            
         }
     }
 

@@ -309,6 +309,10 @@ video {
   color: #fff;
   width: 0;
 }
+.page_header .search_box .search_bar.open {
+  width: 250px;
+  padding-left: 12px;
+}
 .page_header .account-container {
   position: relative;
 }
