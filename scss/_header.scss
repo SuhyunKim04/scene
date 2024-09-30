@@ -7,6 +7,12 @@
  
  
 .page_header{
+    position: fixed;
+    width: 100%;
+    left:0;top:0;
+    z-index: 101;
+    transition: background-color 0.4s ease-in-out;
+
     .inner{
         @extend %main;
         display: flex;
@@ -21,11 +27,7 @@
             @include flex($g: 20px);
         }
     }
-    position: fixed;
-    width: 100%;
-    left:0;top:0;
-    z-index: 99;
-    transition: background-color 0.4s ease-in-out;
+   
  
     
     &.open{
@@ -52,20 +54,35 @@
     }
 
     .search_box{
-        display:flex;
         margin-left: 50px;
 
-        .search_bar{
+        .search_contents{
+            @include flex;
             border-radius: 12px; 
             height: 36px;
-            background-color: #000;
             color: #fff;
-            width: 0;
+            border:1px solid transparent;
+            transition: 0.3s;
+
+            button{
+                padding-top: 5px;
+            }
             
             &.open{
-                width: 250px;
+                background-color: #000; 
                 padding-left: 12px;
+                border-color:rgba(white, 0.1);
+                flex-direction: row-reverse;
+                gap:10px;
+                .search_bar {
+                    width:250px;
+                }
             }
+        }
+
+        .search_bar{
+            width: 0;
+            transition:0.4s;
             
         }
     }

@@ -141,14 +141,48 @@ const viewWhite = () => {
 
 const click = () => {
   const search = document.querySelector('.click_search');
-  const bar = document.querySelector('.search_bar');
+  const bar = document.querySelector('.search_contents');
 
+  if(!search) return false;
+ 
   search.addEventListener('click', (e) => {
     bar.classList.add('open')
   })
+
+  const fm = document.forms.formSearch;
+  fm.addEventListener('focus', (e) => {
+    console.log(e.target)
+  })
+  fm.addEventListener('blur', ()=> {
+    console.log('leave form!!')
+  })
+}
+
+const click2 = () => {
+
+  const fm = document.forms.formSearch;
+  fm.addEventListener('submit', viewInput); 
+
+  function viewInput(e) {
+    const bar = document.querySelector('.search_contents');
+    bar.classList.add('open')
+
+  } 
 }
 
 click();
+
+// const fm = document.forms.formSearch;
+// const input = fm.task;
+
+// input.addEventListener('focus', ()=> {
+//   console.log('focus!!')
+// })
+// input.addEventListener('blur', ()=> {
+//   console.log('blur!!')
+// })
+
+
 
 
 
@@ -192,36 +226,36 @@ const live_modal = () => {
 
 const noticeAutoScroll = () => {
   const notice = document.getElementById('notice');
+  if(!notice){
+    return false;
+   }
   const list = notice.querySelector('.list ul');
-  console.log(list)
 
+   
   let timerId;
   let size = 0;
   let line= notice.querySelector('.list').offsetHeight;
   let limit = (list.childElementCount - 1)* line
-
+  
   const scrollUp = () => {
-
+    
     if(size >= limit) {
       size = 0
     }else{
       size += line
     }
-
+    
+    
+    console.log(`lline : ${line}, limit : ${limit}`)
     list.style.transform = `translateY(-${size}px)`;
   }
 
   const loopPlay = () => {
-    timerId = setInterval(scrollUp, 3000);
+    timerId = setInterval(scrollUp, 5000);
   }
-
-  const loopStop = () => {
-    clearInterval(timerId);
-  }
+ 
 
   loopPlay();
-  notice.addEventListener('mouseenter', loopPlay);
-  notice.addEventListener('mouseleave', loopPlay);
 }
 
 noticeAutoScroll();

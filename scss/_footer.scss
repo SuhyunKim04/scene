@@ -24,7 +24,8 @@ footer{
             }
             li{
                 @include flex($j:flex-start);
-                padding-bottom: 12px;
+                line-height:26px;
+                
             }
             
         }
