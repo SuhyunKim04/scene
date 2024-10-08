@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p tabindex="3">Hello</p>
+    <div>World</div>
+    <div tabindex="1">Banana</div>
+    <input type="text" class="box" tabindex="-1">
+    <input type="text" class="box">
+
+        <script>
+            const boxes = document.querySelectorAll('.box') 
+            boxes.forEach((box) => {
+                box.addEventListener('focus', (e) => {
+                    box.style.backgroundColor = 'red' 
+                })
+
+                box.addEventListener('blur', (e) => {
+                    e.target.style.backgroundColor = 'yellow'
+                })
+            })
+ 
+
+           
+
+
+
+
+
+            
+
+        </script>
+</body>
+</html>

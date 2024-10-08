@@ -1,9 +1,9 @@
 .live_modal{
     @include center;
     background-color:rgb(51, 53, 48);
-    z-index: 101;
-    height: 600px;
-    width: 500px;
+    z-index: 101;  
+    max-width:500px;
+    width:100%;
     display: none;
     border-radius: 8px;
 
@@ -11,7 +11,7 @@
         display: block;
     }
 
-    .close{
+    .close-btn{
         position: absolute;
         top: -5px;
         left: -30px;
@@ -19,7 +19,7 @@
 
     h3{
         background-color: $primary;
-        padding: 26px 10px;
+        padding: 1em 0.6em;
         border-radius: 8px 8px 0 0;
         font-size: 25px;
         padding-left: 35px;
@@ -27,7 +27,7 @@
     }
 
     .modal_list{
-        padding: 20px 30px 0;
+        padding: 20px 30px;
         li{
             @include flex($j:flex-start, $g: 20px);
         }

@@ -169,29 +169,29 @@ video {
   transform: translate(-50%, -50%);
   background-color: rgb(51, 53, 48);
   z-index: 101;
-  height: 600px;
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   display: none;
   border-radius: 8px;
 }
 .live_modal.open {
   display: block;
 }
-.live_modal .close {
+.live_modal .close-btn {
   position: absolute;
   top: -5px;
   left: -30px;
 }
 .live_modal h3 {
   background-color: #1351f9;
-  padding: 26px 10px;
+  padding: 1em 0.6em;
   border-radius: 8px 8px 0 0;
   font-size: 25px;
   padding-left: 35px;
   font-weight: 600;
 }
 .live_modal .modal_list {
-  padding: 20px 30px 0;
+  padding: 20px 30px;
 }
 .live_modal .modal_list li {
   display: flex;

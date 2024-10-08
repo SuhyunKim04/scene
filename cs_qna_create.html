@@ -18,75 +18,84 @@
     <div class="dimm"></div>
     <header class="page_header">
         <div class="inner">
-            <h1>
-                <a href="index.html">
-                    Scene
-                </a>
-            </h1>
-            <div class="white">
-                <nav class="gnb">
-                    <ul>
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a href="./live.html">Live</a>
-                        </li>
-                        <li>
-                            <a href="./mypage.html">My</a>
-                        </li>
-                        <li>
-                            <a href="cs_faq.html">FAQ</a>
-                        </li>
-                        <li>
-                            <a href="./cs_qna.html">QNA</a>
-                        </li>
-                    </ul>
-                </nav>
+            <div class="left">
+                <h1>
+                    <a href="index.html">
+                        Scene
+                    </a>
+                </h1>
+        
+                <div class="white">
+                    <nav class="gnb">
+                        <ul>
+                            <li>
+                                <a href="index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./live.html">Live</a>
+                            </li>
+                            <li>
+                                <a href="./mypage.html">My</a>
+                            </li>
+                            <li>
+                                <a href="cs_faq.html">FAQ</a>
+                            </li>
+                            <li>
+                                <a href="./cs_qna.html">QNA</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
             
-            <nav class="btn_ham">
+            
+            <div class="btn_ham">
                 <a class="menu" href="#">
                     <span></span>
                     <span></span>
                     <span></span>
                 </a>
-            </nav>
+            </div>
             
-            <div class="search_box">
-                <form id="task">
-                    <fieldset>
-                        <legend>Search</legend>
-                        <input type="search" placeholder="search" name="task" class="search_bar">
-                        <button type="submit">
+            <div class="right">
+                <div class="search_box">
+                    <form name="formSearch">
+                        <fieldset>
+                            <legend>Search</legend>
+                            <div class="search_contents">
+                                <input type="search" placeholder="Search" name="task" class="search_bar">
+                                <button type="submit">
+                                    <i class="material-symbols-outlined click_search">
+                                    search
+                                    </i>
+                                </button>
+                            </div>
+                           
+                        </fieldset>
+                    </form>
+        
+                </div>
+                <div class="account-container">
+                    <button type="button" class="profile">
+                        
+                    </button>
+                    <ul class="account_modal">
+                        <li>
                             <i class="material-symbols-outlined">
-                            search
+                                edit
                             </i>
-                        </button>
-                    </fieldset>
-                </form>
-    
+                            Profile
+                        </li>
+                        <li>
+                            <i class="material-symbols-outlined">
+                                person
+                            </i>Account
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <div class="account-container">
-                <button type="button" class="profile">
-                    profile img
-                </button>
-                <ul class="account_modal">
-                    <li>
-                        <i class="material-symbols-outlined">
-                            edit
-                        </i>
-                        Profile
-                    </li>
-                    <li>
-                        <i class="material-symbols-outlined">
-                            person
-                        </i>Account
-                    </li>
-                </ul>
-            </div>
+            
         </div>
-       
     </header>
 
     <main class="page_main base_width">

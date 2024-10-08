@@ -11,18 +11,25 @@ function slideContens(){
 
 // slideContens();
 const dimm = document.querySelector('.dimm');
-
 const openDimm = () => {
   dimm.style.display = 'block'
 }
 
-const dimmControl = () => {
-  const modal = document.querySelector('.modal-container')
-  dimm.addEventListener('click', (e) => {
+ 
+
+const closeModal = (btn=dimm) => {
+  const modal = document.querySelector('.modal-container');
+
+  btn.addEventListener('click', (e) => {
     modal.classList.remove('open')
     dimm.style.display = 'none'
   }) 
-}
+} 
+ 
+const closeBtns = document.querySelectorAll('.close-btn');
+closeBtns.forEach( btn => {
+  closeModal(btn)
+})
 
 const drop_down = ()=> {
   const account = document.querySelector('.my_account');
@@ -130,11 +137,6 @@ const viewWhite = () => {
     white.classList.add('open')
     openDimm();
   })
-
-  dimm.addEventListener('click', (e) => {
-    white.classList.remove('open')
-    closeDimm();
-  })
 }
 
 
@@ -142,6 +144,7 @@ const viewWhite = () => {
 const click = () => {
   const search = document.querySelector('.click_search');
   const bar = document.querySelector('.search_contents');
+  const fm = document.forms.formSearch;
 
   if(!search) return false;
  
@@ -149,11 +152,10 @@ const click = () => {
     bar.classList.add('open')
   })
 
-  const fm = document.forms.formSearch;
-  fm.addEventListener('focus', (e) => {
+  fm.task.addEventListener('focus', (e) => {
     console.log(e.target)
   })
-  fm.addEventListener('blur', ()=> {
+  fm.task.addEventListener('blur', ()=> {
     console.log('leave form!!')
   })
 }
@@ -214,20 +216,15 @@ function openModal(name) {
 */
 const live_modal = () => {
   const live = document.querySelector('.live_modal')
-  const tv = document.querySelectorAll('.live_tv')
-  const close = live.querySelector('.close');
-  const closeModal = () => {
-    live.classList.remove('open');
-    openDimm.classList.remove('open');
-  }
+  const tv = document.querySelectorAll('.live_tv') 
+ 
   tv.forEach((li,index) => {
     li.addEventListener('click', (e) => {
       live.classList.add('open')
       openDimm();
     })
   })
-
-  close.addEventListener('click',closeModal);
+ 
 }
 
 const noticeAutoScroll = () => {
