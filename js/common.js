@@ -215,13 +215,19 @@ function openModal(name) {
 const live_modal = () => {
   const live = document.querySelector('.live_modal')
   const tv = document.querySelectorAll('.live_tv')
-
+  const close = live.querySelector('.close');
+  const closeModal = () => {
+    live.classList.remove('open');
+    openDimm.classList.remove('open');
+  }
   tv.forEach((li,index) => {
     li.addEventListener('click', (e) => {
       live.classList.add('open')
       openDimm();
     })
   })
+
+  close.addEventListener('click',closeModal);
 }
 
 const noticeAutoScroll = () => {

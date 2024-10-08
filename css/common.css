@@ -177,6 +177,11 @@ video {
 .live_modal.open {
   display: block;
 }
+.live_modal .close {
+  position: absolute;
+  top: -5px;
+  left: -30px;
+}
 .live_modal h3 {
   background-color: #1351f9;
   padding: 26px 10px;

@@ -11,6 +11,12 @@
         display: block;
     }
 
+    .close{
+        position: absolute;
+        top: -5px;
+        left: -30px;
+    }
+
     h3{
         background-color: $primary;
         padding: 26px 10px;
