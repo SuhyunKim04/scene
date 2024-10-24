@@ -47,7 +47,7 @@ const header_scroll = ()=>{
   const header = document.querySelector('.page_header');
 
     window.addEventListener('scroll', () => {
-    if(window.scrollY > 200) {
+    if(window.scrollY > 60) {
       header.classList.add('open')
     }else {
       header.classList.remove('open')
@@ -217,13 +217,22 @@ function openModal(name) {
 const live_modal = () => {
   const live = document.querySelector('.live_modal')
   const tv = document.querySelectorAll('.live_tv') 
- 
-  tv.forEach((li,index) => {
-    li.addEventListener('click', (e) => {
-      live.classList.add('open')
-      openDimm();
-    })
+  const schedule = document.querySelector('.schedule_list')
+  if(!schedule){
+    return false;
+  }
+
+  schedule.addEventListener('click', (e) => {
+    live.classList.add('open')
+    openDimm();
   })
+
+  // tv.forEach((li,index) => {
+  //   li.addEventListener('click', (e) => {
+  //     live.classList.add('open')
+  //     openDimm();
+  //   })
+  // })
  
 }
 

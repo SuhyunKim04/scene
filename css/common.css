@@ -8,6 +8,14 @@
   max-width: 1240px;
 }
 
+.cs_contents select, .cs_contents textarea, .cs_contents input[type=search], .cs_contents input[type=email], .cs_contents input[type=tel] {
+  height: 46px;
+  border-radius: 6px;
+  background-color: #252525;
+  padding-left: 8px;
+  border: none;
+}
+
 @media all and (max-width: 720px) {
   .live_main .inner, .sub_title .inner, .page_header .inner, .page_main {
     max-width: none;
@@ -93,6 +101,18 @@ select {
 
 input, select, button {
   vertical-align: middle;
+  font-size: inherit;
+}
+
+select {
+  color: inherit;
+  background-color: #252525;
+  border: none;
+  width: 100%;
+}
+
+input::placeholder {
+  font-size: inherit;
 }
 
 input[type=search] {
@@ -174,15 +194,24 @@ video {
   display: none;
   border-radius: 8px;
 }
+.live_modal .modal_contents {
+  max-height: 350px;
+  overflow: auto;
+}
+.live_modal .modal_contents .description {
+  padding: 10px 0;
+  color: rgba(255, 255, 255, 0.5);
+}
 .live_modal.open {
   display: block;
 }
 .live_modal .close-btn {
   position: absolute;
-  top: -5px;
+  top: 5px;
   left: -30px;
+  font-size: 30px;
 }
-.live_modal h3 {
+.live_modal .modal_head {
   background-color: #1351f9;
   padding: 1em 0.6em;
   border-radius: 8px 8px 0 0;
@@ -198,6 +227,7 @@ video {
   justify-content: flex-start;
   align-items: center;
   gap: 20px;
+  padding-bottom: 20px;
 }
 .live_modal .modal_list img {
   width: 200px;
@@ -892,9 +922,10 @@ video {
 }
 .cs_contents .cs_form li .qna_input {
   border-radius: 6px;
+  width: 100%;
+  max-width: 300px;
 }
 .cs_contents .cs_form li .qna_input input {
-  font-size: 16px;
   padding-left: 20px;
   color: #a5a5a5;
   width: 100%;
@@ -904,9 +935,6 @@ video {
   font-size: 14px;
   color: #717171;
   margin-top: 20px;
-}
-.cs_contents .cs_form li select {
-  color: #a5a5a5;
 }
 .cs_contents .cs_form textarea {
   width: 100%;

@@ -3,6 +3,14 @@
     margin:0 auto;
     max-width:1240px; 
 }
+
+%input {
+    height:46px;
+    border-radius:6px;
+    background-color:#252525;
+    padding-left:8px;
+    border:none;
+}
   
 @include media($mobile) {
     %main {

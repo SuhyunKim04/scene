@@ -76,10 +76,19 @@ select {
 
 input, select, button{
 	vertical-align: middle;
+	font-size: inherit;
 }
 
+select{
+	color:inherit;
+	background-color: #252525;
+	border:none;
+	width: 100%;
+}
 
-
+input::placeholder{
+	font-size: inherit;
+}
 //input
 //border background
 
