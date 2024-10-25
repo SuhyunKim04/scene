@@ -5,7 +5,7 @@
             
 
         li{
-            @include flex($j: flex-start);
+            @include flex($j: flex-start,$a:flex-start);
             padding-bottom: 36px;
             color: #a5a5a5;
             font-size: 16px;
@@ -41,6 +41,10 @@
                     color: #717171;
                     margin-top: 20px;
                 }
+            }
+
+            .qna_agreement{
+                font-size: 14px;
             }
             
         }

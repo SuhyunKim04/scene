@@ -905,7 +905,7 @@ video {
 .cs_contents .cs_form li {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   padding-bottom: 36px;
   color: #a5a5a5;
   font-size: 16px;
@@ -935,6 +935,9 @@ video {
   font-size: 14px;
   color: #717171;
   margin-top: 20px;
+}
+.cs_contents .cs_form li .qna_agreement {
+  font-size: 14px;
 }
 .cs_contents .cs_form textarea {
   width: 100%;
