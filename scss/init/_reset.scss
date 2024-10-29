@@ -84,6 +84,7 @@ select{
 	background-color: #252525;
 	border:none;
 	width: 100%;
+	appearance: none;
 }
 
 input::placeholder{
@@ -100,5 +101,7 @@ $types : 'search','text','email','tel','number','password';
 		background-color:transparent;
 	    height:map-get($input, height);
 	}
-  }
+}
+
+
    

@@ -109,6 +109,7 @@ select {
   background-color: #252525;
   border: none;
   width: 100%;
+  appearance: none;
 }
 
 input::placeholder {
@@ -970,6 +971,10 @@ video {
   border-radius: 50%;
   display: block;
   margin-top: -2px;
+}
+
+.cs_contents select {
+  background: url("/images/icons/arrow_b.svg") no-repeat right 8px center/auto 40%;
 }
 
 footer {

@@ -99,6 +99,9 @@
     select, textarea {
         @extend %input
     }
+
+    select{
+        background: url('/images/icons/arrow_b.svg') no-repeat right  8px center/auto 40%;
+    }
  
 }
-
