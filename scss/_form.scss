@@ -17,14 +17,13 @@
                 flex-basis: 280px;
             }
 
-            .contents{
-                input[type="checkbox"]{
-                    display: none;
-                }
+            input[type="checkbox"]{
+               border: 1px solid #717171;
+                width: 30px;
+                height: 30px;
             }
 
             .qna_input{
-                
                 border-radius: 6px;
                 width: 100%;
                 max-width: 300px;
@@ -34,6 +33,10 @@
                     color: #a5a5a5;
                     width: 100%;
                     background-color: #252525;
+                }
+
+                textarea{
+                    width: 700px;
                 }
 
                 p{
@@ -102,6 +105,7 @@
 
     select{
         background: url('/images/icons/arrow_b.svg') no-repeat right  8px center/auto 40%;
+        
     }
  
 }

@@ -102,6 +102,7 @@ select {
 input, select, button {
   vertical-align: middle;
   font-size: inherit;
+  appearance: none;
 }
 
 select {
@@ -109,7 +110,6 @@ select {
   background-color: #252525;
   border: none;
   width: 100%;
-  appearance: none;
 }
 
 input::placeholder {
@@ -918,8 +918,10 @@ video {
 .cs_contents .cs_form li .cs_title {
   flex-basis: 280px;
 }
-.cs_contents .cs_form li .contents input[type=checkbox] {
-  display: none;
+.cs_contents .cs_form li input[type=checkbox] {
+  border: 1px solid #717171;
+  width: 30px;
+  height: 30px;
 }
 .cs_contents .cs_form li .qna_input {
   border-radius: 6px;
@@ -931,6 +933,9 @@ video {
   color: #a5a5a5;
   width: 100%;
   background-color: #252525;
+}
+.cs_contents .cs_form li .qna_input textarea {
+  width: 700px;
 }
 .cs_contents .cs_form li .qna_input p {
   font-size: 14px;
