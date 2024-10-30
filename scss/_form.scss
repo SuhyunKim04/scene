@@ -17,27 +17,18 @@
                 flex-basis: 280px;
             }
 
-            input[type="checkbox"]{
-               border: 1px solid #717171;
-                width: 30px;
-                height: 30px;
-            }
-
             .qna_input{
                 border-radius: 6px;
                 width: 100%;
-                max-width: 300px;
+                max-width: 700px;
 
                 input{
                     padding-left: 20px;
-                    color: #a5a5a5;
-                    width: 100%;
+                    color: #a5a5a5; 
                     background-color: #252525;
                 }
 
-                textarea{
-                    width: 700px;
-                }
+                
 
                 p{
                     font-size: 14px;
@@ -52,6 +43,13 @@
             
         }
         
+
+        .chk-list{
+            @include flex($g:20px);
+            label{
+                @include flex($a:center,$g:6px);
+            }
+        }
         textarea{
             width: 100%;
             height: 160px;
@@ -95,17 +93,16 @@
     $types : search, email, text, tel;
 
     input {
-        &[type=search], &[type=email], &[type=tel] {
+        &[type=search], &[type=email], &[type=tel],&[type=text] {
             @extend %input;
         }
     }
     select, textarea {
-        @extend %input
+        @extend %input;
     }
 
     select{
         background: url('/images/icons/arrow_b.svg') no-repeat right  8px center/auto 40%;
-        
+        background-color:#252525;
     }
- 
 }

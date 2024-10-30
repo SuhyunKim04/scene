@@ -8,12 +8,13 @@
   max-width: 1240px;
 }
 
-.cs_contents select, .cs_contents textarea, .cs_contents input[type=search], .cs_contents input[type=email], .cs_contents input[type=tel] {
+.cs_contents select, .cs_contents textarea, .cs_contents input[type=search], .cs_contents input[type=email], .cs_contents input[type=tel], .cs_contents input[type=text] {
   height: 46px;
   border-radius: 6px;
   background-color: #252525;
   padding-left: 8px;
   border: none;
+  width: 100%;
 }
 
 @media all and (max-width: 720px) {
@@ -23,7 +24,7 @@
     padding: 0 32px;
   }
 }
-body, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, fieldset, button, select, textarea, figure, figcaption {
+body, div, h1, h2, h3, h4, h5, h6, p, blockquote, dl, dt, dd, ol, ul, li, fieldset, button, select, textarea, figure, figcaption, input {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -103,10 +104,10 @@ input, select, button {
   vertical-align: middle;
   font-size: inherit;
   appearance: none;
+  color: inherit;
 }
 
 select {
-  color: inherit;
   background-color: #252525;
   border: none;
   width: 100%;
@@ -150,6 +151,20 @@ input[type=password] {
   border: none 0;
   background-color: transparent;
   height: 30px;
+}
+
+input[type=checkbox] {
+  background: url("/images/icons/checkbox_off.svg") no-repeat center center/contain;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+input[type=checkbox]:checked {
+  background-image: url("/images/icons/checkbox_on_line.svg");
+}
+
+input:focus {
+  outline: 1px solid #252525;
 }
 
 body {
@@ -918,24 +933,15 @@ video {
 .cs_contents .cs_form li .cs_title {
   flex-basis: 280px;
 }
-.cs_contents .cs_form li input[type=checkbox] {
-  border: 1px solid #717171;
-  width: 30px;
-  height: 30px;
-}
 .cs_contents .cs_form li .qna_input {
   border-radius: 6px;
   width: 100%;
-  max-width: 300px;
+  max-width: 700px;
 }
 .cs_contents .cs_form li .qna_input input {
   padding-left: 20px;
   color: #a5a5a5;
-  width: 100%;
   background-color: #252525;
-}
-.cs_contents .cs_form li .qna_input textarea {
-  width: 700px;
 }
 .cs_contents .cs_form li .qna_input p {
   font-size: 14px;
@@ -944,6 +950,18 @@ video {
 }
 .cs_contents .cs_form li .qna_agreement {
   font-size: 14px;
+}
+.cs_contents .cs_form .chk-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.cs_contents .cs_form .chk-list label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 6px;
 }
 .cs_contents .cs_form textarea {
   width: 100%;
@@ -980,6 +998,7 @@ video {
 
 .cs_contents select {
   background: url("/images/icons/arrow_b.svg") no-repeat right 8px center/auto 40%;
+  background-color: #252525;
 }
 
 footer {

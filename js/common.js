@@ -142,15 +142,25 @@ const viewWhite = () => {
 
 
 const click = () => {
-  const search = document.querySelector('.click_search');
+  //const search = document.querySelector('.click_search');
   const bar = document.querySelector('.search_contents');
   const fm = document.forms.formSearch;
 
   if(!search) return false;
  
-  search.addEventListener('click', (e) => {
+ /* search.addEventListener('click', (e) => {
     bar.classList.add('open')
   })
+    */
+
+  fm.addEventListener('submit', openBar);
+
+  function openBar(e) {
+    e.preventDefault();
+    bar.classList.add('open')
+    e.target.task.focus();
+    console.log('task : ', e.target.task);
+  }
 
   fm.task.addEventListener('focus', (e) => {
     console.log(e.target)

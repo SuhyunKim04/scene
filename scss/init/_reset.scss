@@ -1,7 +1,7 @@
 @charset "utf-8";
 
   
-body,div, h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ol,ul,li,fieldset,button,select,textarea,figure,figcaption{
+body,div, h1,h2,h3,h4,h5,h6,p,blockquote,dl,dt,dd,ol,ul,li,fieldset,button,select,textarea,figure,figcaption,input{
 	margin: 0;
 	padding: 0;
 	box-sizing:border-box; 
@@ -78,10 +78,10 @@ input, select, button{
 	vertical-align: middle;
 	font-size: inherit;
 	appearance: none;
+	color: inherit;
 }
 
 select{
-	color:inherit;
 	background-color: #252525;
 	border:none;
 	width: 100%;
@@ -103,5 +103,22 @@ $types : 'search','text','email','tel','number','password';
 	}
 }
 
+input[type=checkbox] {
+	background: url('/images/icons/checkbox_off.svg') no-repeat center center/contain;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+
+	&:checked{
+		background-image: url('/images/icons/checkbox_on_line.svg');
+	}
+}
+
+input{ 
+
+	&:focus {
+		outline:1px solid #252525;
+	}
+}
 
    
